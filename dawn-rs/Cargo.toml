@@ -1,0 +1,25 @@
+[package]
+name = "dawn-rs"
+version = "0.1.0"
+authors = ["Aaron Loucks <aloucks@cofront.net>"]
+edition = "2018"
+
+[lib]
+name = "dawn"
+
+[dependencies]
+dawn-sys = { version = "0.1", path = "../dawn-sys" }
+unchecked_unwrap = "1.0"
+raw-window-handle = "0.3"
+bitflags = "1.2.1"
+parking_lot = "0.10.0"
+smallvec = "1.2.0"
+libc = "0.2"
+
+[dev-dependencies]
+glfw = {version = "0.37.0", features = ["vulkan"] }
+memoffset = "0.5.4"
+backtrace = "0.3"
+
+[features]
+bindgen = ["dawn-sys/bindgen"]
