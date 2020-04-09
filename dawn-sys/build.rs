@@ -17,10 +17,11 @@ fn main() {
     let out_dir_dawn_src = PathBuf::from(&out_dir_path_buf).join("dawn_src");
 
     println!("cargo:rerun-if-changed=build.rs");
-    println!("cargo:rerun-if-changed=src/dusk.cpp");
+    println!("cargo:rerun-if-changed=dawnc/dawnc.cpp");
+    println!("cargo:rerun-if-changed=dawnc/dawnc.h");
     println!("cargo:rerun-if-changed=dawn");
 
-    println!("cargo:rustc-link-lib=libdawn_native.dll");
+    println!("cargo:rustc-link-lib=dawn_native.dll");
     println!("cargo:rustc-link-lib=libdawn_proc.dll");
     println!("cargo:rustc-link-lib=libc++.dll");
     println!(
