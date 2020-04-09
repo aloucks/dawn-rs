@@ -154,20 +154,20 @@ fn bindgen_test_layout_DawnProcTable() {
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).getProcAddress as *const _ as usize },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(getProcAddress)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(getProcAddress)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).createInstance as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(createInstance)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(createInstance)
         )
     );
     assert_eq!(
@@ -176,20 +176,20 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bindGroupReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bindGroupReference)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).bindGroupRelease as *const _ as usize },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bindGroupRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bindGroupRelease)
         )
     );
     assert_eq!(
@@ -198,10 +198,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         32usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bindGroupLayoutReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bindGroupLayoutReference)
         )
     );
     assert_eq!(
@@ -210,20 +210,20 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         40usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bindGroupLayoutRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bindGroupLayoutRelease)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).bufferDestroy as *const _ as usize },
         48usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bufferDestroy)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bufferDestroy)
         )
     );
     assert_eq!(
@@ -232,10 +232,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         56usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bufferMapReadAsync)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bufferMapReadAsync)
         )
     );
     assert_eq!(
@@ -244,50 +244,50 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         64usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bufferMapWriteAsync)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bufferMapWriteAsync)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).bufferSetSubData as *const _ as usize },
         72usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bufferSetSubData)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bufferSetSubData)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).bufferUnmap as *const _ as usize },
         80usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bufferUnmap)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bufferUnmap)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).bufferReference as *const _ as usize },
         88usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bufferReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bufferReference)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).bufferRelease as *const _ as usize },
         96usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(bufferRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(bufferRelease)
         )
     );
     assert_eq!(
@@ -296,10 +296,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         104usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandBufferReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandBufferReference)
         )
     );
     assert_eq!(
@@ -308,10 +308,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         112usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandBufferRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandBufferRelease)
         )
     );
     assert_eq!(
@@ -321,10 +321,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         120usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderBeginComputePass)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderBeginComputePass)
         )
     );
     assert_eq!(
@@ -334,10 +334,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         128usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderBeginRenderPass)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderBeginRenderPass)
         )
     );
     assert_eq!(
@@ -347,10 +347,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         136usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderCopyBufferToBuffer)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderCopyBufferToBuffer)
         )
     );
     assert_eq!(
@@ -360,10 +360,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         144usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderCopyBufferToTexture)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderCopyBufferToTexture)
         )
     );
     assert_eq!(
@@ -373,10 +373,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         152usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderCopyTextureToBuffer)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderCopyTextureToBuffer)
         )
     );
     assert_eq!(
@@ -386,10 +386,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         160usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderCopyTextureToTexture)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderCopyTextureToTexture)
         )
     );
     assert_eq!(
@@ -398,10 +398,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         168usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderFinish)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderFinish)
         )
     );
     assert_eq!(
@@ -411,10 +411,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         176usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderInsertDebugMarker)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderInsertDebugMarker)
         )
     );
     assert_eq!(
@@ -424,10 +424,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         184usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderPopDebugGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderPopDebugGroup)
         )
     );
     assert_eq!(
@@ -437,10 +437,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         192usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderPushDebugGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderPushDebugGroup)
         )
     );
     assert_eq!(
@@ -449,10 +449,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         200usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderReference)
         )
     );
     assert_eq!(
@@ -461,10 +461,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         208usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(commandEncoderRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(commandEncoderRelease)
         )
     );
     assert_eq!(
@@ -474,10 +474,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         216usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePassEncoderDispatch)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePassEncoderDispatch)
         )
     );
     assert_eq!(
@@ -487,10 +487,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         224usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePassEncoderDispatchIndirect)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePassEncoderDispatchIndirect)
         )
     );
     assert_eq!(
@@ -500,10 +500,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         232usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePassEncoderEndPass)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePassEncoderEndPass)
         )
     );
     assert_eq!(
@@ -513,10 +513,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         240usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePassEncoderInsertDebugMarker)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePassEncoderInsertDebugMarker)
         )
     );
     assert_eq!(
@@ -526,10 +526,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         248usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePassEncoderPopDebugGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePassEncoderPopDebugGroup)
         )
     );
     assert_eq!(
@@ -539,10 +539,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         256usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePassEncoderPushDebugGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePassEncoderPushDebugGroup)
         )
     );
     assert_eq!(
@@ -552,10 +552,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         264usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePassEncoderSetBindGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePassEncoderSetBindGroup)
         )
     );
     assert_eq!(
@@ -565,10 +565,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         272usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePassEncoderSetPipeline)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePassEncoderSetPipeline)
         )
     );
     assert_eq!(
@@ -578,10 +578,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         280usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePassEncoderReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePassEncoderReference)
         )
     );
     assert_eq!(
@@ -591,10 +591,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         288usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePassEncoderRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePassEncoderRelease)
         )
     );
     assert_eq!(
@@ -604,10 +604,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         296usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePipelineGetBindGroupLayout)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePipelineGetBindGroupLayout)
         )
     );
     assert_eq!(
@@ -616,10 +616,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         304usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePipelineReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePipelineReference)
         )
     );
     assert_eq!(
@@ -628,10 +628,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         312usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(computePipelineRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(computePipelineRelease)
         )
     );
     assert_eq!(
@@ -640,10 +640,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         320usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateBindGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateBindGroup)
         )
     );
     assert_eq!(
@@ -653,10 +653,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         328usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateBindGroupLayout)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateBindGroupLayout)
         )
     );
     assert_eq!(
@@ -665,10 +665,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         336usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateBuffer)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateBuffer)
         )
     );
     assert_eq!(
@@ -677,10 +677,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         344usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateBufferMapped)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateBufferMapped)
         )
     );
     assert_eq!(
@@ -690,10 +690,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         352usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateBufferMappedAsync)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateBufferMappedAsync)
         )
     );
     assert_eq!(
@@ -703,10 +703,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         360usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateCommandEncoder)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateCommandEncoder)
         )
     );
     assert_eq!(
@@ -716,10 +716,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         368usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateComputePipeline)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateComputePipeline)
         )
     );
     assert_eq!(
@@ -729,10 +729,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         376usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreatePipelineLayout)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreatePipelineLayout)
         )
     );
     assert_eq!(
@@ -741,10 +741,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         384usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateQueue)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateQueue)
         )
     );
     assert_eq!(
@@ -754,10 +754,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         392usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateRenderBundleEncoder)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateRenderBundleEncoder)
         )
     );
     assert_eq!(
@@ -767,10 +767,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         400usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateRenderPipeline)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateRenderPipeline)
         )
     );
     assert_eq!(
@@ -779,10 +779,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         408usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateSampler)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateSampler)
         )
     );
     assert_eq!(
@@ -791,10 +791,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         416usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateShaderModule)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateShaderModule)
         )
     );
     assert_eq!(
@@ -803,10 +803,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         424usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateSwapChain)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateSwapChain)
         )
     );
     assert_eq!(
@@ -815,10 +815,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         432usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceCreateTexture)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceCreateTexture)
         )
     );
     assert_eq!(
@@ -827,10 +827,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         440usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceInjectError)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceInjectError)
         )
     );
     assert_eq!(
@@ -839,10 +839,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         448usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceLoseForTesting)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceLoseForTesting)
         )
     );
     assert_eq!(
@@ -851,10 +851,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         456usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(devicePopErrorScope)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(devicePopErrorScope)
         )
     );
     assert_eq!(
@@ -863,10 +863,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         464usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(devicePushErrorScope)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(devicePushErrorScope)
         )
     );
     assert_eq!(
@@ -876,10 +876,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         472usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceSetDeviceLostCallback)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceSetDeviceLostCallback)
         )
     );
     assert_eq!(
@@ -889,40 +889,40 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         480usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceSetUncapturedErrorCallback)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceSetUncapturedErrorCallback)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).deviceTick as *const _ as usize },
         488usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceTick)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceTick)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).deviceReference as *const _ as usize },
         496usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceReference)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).deviceRelease as *const _ as usize },
         504usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(deviceRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(deviceRelease)
         )
     );
     assert_eq!(
@@ -931,10 +931,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         512usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(fenceGetCompletedValue)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(fenceGetCompletedValue)
         )
     );
     assert_eq!(
@@ -943,30 +943,30 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         520usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(fenceOnCompletion)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(fenceOnCompletion)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).fenceReference as *const _ as usize },
         528usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(fenceReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(fenceReference)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).fenceRelease as *const _ as usize },
         536usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(fenceRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(fenceRelease)
         )
     );
     assert_eq!(
@@ -975,10 +975,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         544usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(instanceCreateSurface)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(instanceCreateSurface)
         )
     );
     assert_eq!(
@@ -987,20 +987,20 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         552usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(instanceReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(instanceReference)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).instanceRelease as *const _ as usize },
         560usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(instanceRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(instanceRelease)
         )
     );
     assert_eq!(
@@ -1009,10 +1009,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         568usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(pipelineLayoutReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(pipelineLayoutReference)
         )
     );
     assert_eq!(
@@ -1021,60 +1021,60 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         576usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(pipelineLayoutRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(pipelineLayoutRelease)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).queueCreateFence as *const _ as usize },
         584usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(queueCreateFence)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(queueCreateFence)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).queueSignal as *const _ as usize },
         592usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(queueSignal)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(queueSignal)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).queueSubmit as *const _ as usize },
         600usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(queueSubmit)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(queueSubmit)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).queueReference as *const _ as usize },
         608usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(queueReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(queueReference)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).queueRelease as *const _ as usize },
         616usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(queueRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(queueRelease)
         )
     );
     assert_eq!(
@@ -1083,10 +1083,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         624usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleReference)
         )
     );
     assert_eq!(
@@ -1095,10 +1095,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         632usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleRelease)
         )
     );
     assert_eq!(
@@ -1107,10 +1107,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         640usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderDraw)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderDraw)
         )
     );
     assert_eq!(
@@ -1120,10 +1120,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         648usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderDrawIndexed)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderDrawIndexed)
         )
     );
     assert_eq!(
@@ -1133,10 +1133,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         656usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderDrawIndexedIndirect)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderDrawIndexedIndirect)
         )
     );
     assert_eq!(
@@ -1146,10 +1146,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         664usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderDrawIndirect)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderDrawIndirect)
         )
     );
     assert_eq!(
@@ -1159,10 +1159,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         672usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderFinish)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderFinish)
         )
     );
     assert_eq!(
@@ -1172,10 +1172,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         680usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderInsertDebugMarker)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderInsertDebugMarker)
         )
     );
     assert_eq!(
@@ -1185,10 +1185,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         688usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderPopDebugGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderPopDebugGroup)
         )
     );
     assert_eq!(
@@ -1198,10 +1198,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         696usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderPushDebugGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderPushDebugGroup)
         )
     );
     assert_eq!(
@@ -1211,10 +1211,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         704usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderSetBindGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderSetBindGroup)
         )
     );
     assert_eq!(
@@ -1224,10 +1224,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         712usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderSetIndexBuffer)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderSetIndexBuffer)
         )
     );
     assert_eq!(
@@ -1237,10 +1237,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         720usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderSetPipeline)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderSetPipeline)
         )
     );
     assert_eq!(
@@ -1250,10 +1250,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         728usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderSetVertexBuffer)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderSetVertexBuffer)
         )
     );
     assert_eq!(
@@ -1263,10 +1263,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         736usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderReference)
         )
     );
     assert_eq!(
@@ -1276,10 +1276,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         744usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderBundleEncoderRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderBundleEncoderRelease)
         )
     );
     assert_eq!(
@@ -1288,10 +1288,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         752usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderDraw)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderDraw)
         )
     );
     assert_eq!(
@@ -1301,10 +1301,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         760usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderDrawIndexed)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderDrawIndexed)
         )
     );
     assert_eq!(
@@ -1314,10 +1314,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         768usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderDrawIndexedIndirect)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderDrawIndexedIndirect)
         )
     );
     assert_eq!(
@@ -1327,10 +1327,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         776usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderDrawIndirect)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderDrawIndirect)
         )
     );
     assert_eq!(
@@ -1339,10 +1339,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         784usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderEndPass)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderEndPass)
         )
     );
     assert_eq!(
@@ -1352,10 +1352,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         792usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderExecuteBundles)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderExecuteBundles)
         )
     );
     assert_eq!(
@@ -1365,10 +1365,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         800usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderInsertDebugMarker)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderInsertDebugMarker)
         )
     );
     assert_eq!(
@@ -1378,10 +1378,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         808usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderPopDebugGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderPopDebugGroup)
         )
     );
     assert_eq!(
@@ -1391,10 +1391,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         816usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderPushDebugGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderPushDebugGroup)
         )
     );
     assert_eq!(
@@ -1404,10 +1404,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         824usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderSetBindGroup)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderSetBindGroup)
         )
     );
     assert_eq!(
@@ -1417,10 +1417,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         832usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderSetBlendColor)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderSetBlendColor)
         )
     );
     assert_eq!(
@@ -1430,10 +1430,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         840usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderSetIndexBuffer)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderSetIndexBuffer)
         )
     );
     assert_eq!(
@@ -1443,10 +1443,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         848usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderSetPipeline)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderSetPipeline)
         )
     );
     assert_eq!(
@@ -1456,10 +1456,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         856usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderSetScissorRect)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderSetScissorRect)
         )
     );
     assert_eq!(
@@ -1469,10 +1469,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         864usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderSetStencilReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderSetStencilReference)
         )
     );
     assert_eq!(
@@ -1482,10 +1482,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         872usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderSetVertexBuffer)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderSetVertexBuffer)
         )
     );
     assert_eq!(
@@ -1495,10 +1495,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         880usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderSetViewport)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderSetViewport)
         )
     );
     assert_eq!(
@@ -1508,10 +1508,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         888usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderReference)
         )
     );
     assert_eq!(
@@ -1520,10 +1520,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         896usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPassEncoderRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPassEncoderRelease)
         )
     );
     assert_eq!(
@@ -1533,10 +1533,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         904usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPipelineGetBindGroupLayout)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPipelineGetBindGroupLayout)
         )
     );
     assert_eq!(
@@ -1545,10 +1545,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         912usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPipelineReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPipelineReference)
         )
     );
     assert_eq!(
@@ -1557,30 +1557,30 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         920usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(renderPipelineRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(renderPipelineRelease)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).samplerReference as *const _ as usize },
         928usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(samplerReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(samplerReference)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).samplerRelease as *const _ as usize },
         936usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(samplerRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(samplerRelease)
         )
     );
     assert_eq!(
@@ -1589,10 +1589,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         944usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(shaderModuleReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(shaderModuleReference)
         )
     );
     assert_eq!(
@@ -1601,30 +1601,30 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         952usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(shaderModuleRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(shaderModuleRelease)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).surfaceReference as *const _ as usize },
         960usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(surfaceReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(surfaceReference)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).surfaceRelease as *const _ as usize },
         968usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(surfaceRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(surfaceRelease)
         )
     );
     assert_eq!(
@@ -1633,10 +1633,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         976usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(swapChainConfigure)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(swapChainConfigure)
         )
     );
     assert_eq!(
@@ -1646,20 +1646,20 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         984usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(swapChainGetCurrentTextureView)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(swapChainGetCurrentTextureView)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).swapChainPresent as *const _ as usize },
         992usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(swapChainPresent)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(swapChainPresent)
         )
     );
     assert_eq!(
@@ -1668,20 +1668,20 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         1000usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(swapChainReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(swapChainReference)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).swapChainRelease as *const _ as usize },
         1008usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(swapChainRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(swapChainRelease)
         )
     );
     assert_eq!(
@@ -1690,40 +1690,40 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         1016usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(textureCreateView)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(textureCreateView)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).textureDestroy as *const _ as usize },
         1024usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(textureDestroy)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(textureDestroy)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).textureReference as *const _ as usize },
         1032usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(textureReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(textureReference)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<DawnProcTable>())).textureRelease as *const _ as usize },
         1040usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(textureRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(textureRelease)
         )
     );
     assert_eq!(
@@ -1732,10 +1732,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         1048usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(textureViewReference)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(textureViewReference)
         )
     );
     assert_eq!(
@@ -1744,10 +1744,10 @@ fn bindgen_test_layout_DawnProcTable() {
         },
         1056usize,
         concat!(
-        "Offset of field: ",
-        stringify!(DawnProcTable),
-        "::",
-        stringify!(textureViewRelease)
+            "Offset of field: ",
+            stringify!(DawnProcTable),
+            "::",
+            stringify!(textureViewRelease)
         )
     );
 }

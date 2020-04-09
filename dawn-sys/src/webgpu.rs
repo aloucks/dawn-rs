@@ -262,6 +262,8 @@ pub const WGPUSType_SurfaceDescriptorFromMetalLayer: WGPUSType = 1;
 pub const WGPUSType_SurfaceDescriptorFromWindowsHWND: WGPUSType = 2;
 pub const WGPUSType_SurfaceDescriptorFromXlib: WGPUSType = 3;
 pub const WGPUSType_SurfaceDescriptorFromHTMLCanvasId: WGPUSType = 4;
+pub const WGPUSType_SamplerDescriptorDummyAnisotropicFiltering: WGPUSType = 5;
+pub const WGPUSType_RenderPipelineDescriptorDummyExtension: WGPUSType = 6;
 pub const WGPUSType_Force32: WGPUSType = 2147483647;
 pub type WGPUSType = i32;
 pub const WGPUStencilOperation_Keep: WGPUStencilOperation = 0;
@@ -450,20 +452,20 @@ fn bindgen_test_layout_WGPUChainedStruct() {
         unsafe { &(*(::core::ptr::null::<WGPUChainedStruct>())).next as *const _ as usize },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUChainedStruct),
-        "::",
-        stringify!(next)
+            "Offset of field: ",
+            stringify!(WGPUChainedStruct),
+            "::",
+            stringify!(next)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUChainedStruct>())).sType as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUChainedStruct),
-        "::",
-        stringify!(sType)
+            "Offset of field: ",
+            stringify!(WGPUChainedStruct),
+            "::",
+            stringify!(sType)
         )
     );
 }
@@ -495,40 +497,40 @@ fn bindgen_test_layout_WGPUAdapterProperties() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUAdapterProperties),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUAdapterProperties),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUAdapterProperties>())).deviceID as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUAdapterProperties),
-        "::",
-        stringify!(deviceID)
+            "Offset of field: ",
+            stringify!(WGPUAdapterProperties),
+            "::",
+            stringify!(deviceID)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUAdapterProperties>())).vendorID as *const _ as usize },
         12usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUAdapterProperties),
-        "::",
-        stringify!(vendorID)
+            "Offset of field: ",
+            stringify!(WGPUAdapterProperties),
+            "::",
+            stringify!(vendorID)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUAdapterProperties>())).name as *const _ as usize },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUAdapterProperties),
-        "::",
-        stringify!(name)
+            "Offset of field: ",
+            stringify!(WGPUAdapterProperties),
+            "::",
+            stringify!(name)
         )
     );
     assert_eq!(
@@ -537,10 +539,10 @@ fn bindgen_test_layout_WGPUAdapterProperties() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUAdapterProperties),
-        "::",
-        stringify!(adapterType)
+            "Offset of field: ",
+            stringify!(WGPUAdapterProperties),
+            "::",
+            stringify!(adapterType)
         )
     );
     assert_eq!(
@@ -549,16 +551,16 @@ fn bindgen_test_layout_WGPUAdapterProperties() {
         },
         28usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUAdapterProperties),
-        "::",
-        stringify!(backendType)
+            "Offset of field: ",
+            stringify!(WGPUAdapterProperties),
+            "::",
+            stringify!(backendType)
         )
     );
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct WGPUBindGroupBinding {
+pub struct WGPUBindGroupEntry {
     pub binding: u32,
     pub buffer: WGPUBuffer,
     pub offset: u64,
@@ -567,83 +569,81 @@ pub struct WGPUBindGroupBinding {
     pub textureView: WGPUTextureView,
 }
 #[test]
-fn bindgen_test_layout_WGPUBindGroupBinding() {
+fn bindgen_test_layout_WGPUBindGroupEntry() {
     assert_eq!(
-        ::core::mem::size_of::<WGPUBindGroupBinding>(),
+        ::core::mem::size_of::<WGPUBindGroupEntry>(),
         48usize,
-        concat!("Size of: ", stringify!(WGPUBindGroupBinding))
+        concat!("Size of: ", stringify!(WGPUBindGroupEntry))
     );
     assert_eq!(
-        ::core::mem::align_of::<WGPUBindGroupBinding>(),
+        ::core::mem::align_of::<WGPUBindGroupEntry>(),
         8usize,
-        concat!("Alignment of ", stringify!(WGPUBindGroupBinding))
+        concat!("Alignment of ", stringify!(WGPUBindGroupEntry))
     );
     assert_eq!(
-        unsafe { &(*(::core::ptr::null::<WGPUBindGroupBinding>())).binding as *const _ as usize },
+        unsafe { &(*(::core::ptr::null::<WGPUBindGroupEntry>())).binding as *const _ as usize },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupBinding),
-        "::",
-        stringify!(binding)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupEntry),
+            "::",
+            stringify!(binding)
         )
     );
     assert_eq!(
-        unsafe { &(*(::core::ptr::null::<WGPUBindGroupBinding>())).buffer as *const _ as usize },
+        unsafe { &(*(::core::ptr::null::<WGPUBindGroupEntry>())).buffer as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupBinding),
-        "::",
-        stringify!(buffer)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupEntry),
+            "::",
+            stringify!(buffer)
         )
     );
     assert_eq!(
-        unsafe { &(*(::core::ptr::null::<WGPUBindGroupBinding>())).offset as *const _ as usize },
+        unsafe { &(*(::core::ptr::null::<WGPUBindGroupEntry>())).offset as *const _ as usize },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupBinding),
-        "::",
-        stringify!(offset)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupEntry),
+            "::",
+            stringify!(offset)
         )
     );
     assert_eq!(
-        unsafe { &(*(::core::ptr::null::<WGPUBindGroupBinding>())).size as *const _ as usize },
+        unsafe { &(*(::core::ptr::null::<WGPUBindGroupEntry>())).size as *const _ as usize },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupBinding),
-        "::",
-        stringify!(size)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupEntry),
+            "::",
+            stringify!(size)
         )
     );
     assert_eq!(
-        unsafe { &(*(::core::ptr::null::<WGPUBindGroupBinding>())).sampler as *const _ as usize },
+        unsafe { &(*(::core::ptr::null::<WGPUBindGroupEntry>())).sampler as *const _ as usize },
         32usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupBinding),
-        "::",
-        stringify!(sampler)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupEntry),
+            "::",
+            stringify!(sampler)
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::core::ptr::null::<WGPUBindGroupBinding>())).textureView as *const _ as usize
-        },
+        unsafe { &(*(::core::ptr::null::<WGPUBindGroupEntry>())).textureView as *const _ as usize },
         40usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupBinding),
-        "::",
-        stringify!(textureView)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupEntry),
+            "::",
+            stringify!(textureView)
         )
     );
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct WGPUBindGroupLayoutBinding {
+pub struct WGPUBindGroupLayoutEntry {
     pub binding: u32,
     pub visibility: WGPUShaderStageFlags,
     pub type_: WGPUBindingType,
@@ -654,116 +654,113 @@ pub struct WGPUBindGroupLayoutBinding {
     pub storageTextureFormat: WGPUTextureFormat,
 }
 #[test]
-fn bindgen_test_layout_WGPUBindGroupLayoutBinding() {
+fn bindgen_test_layout_WGPUBindGroupLayoutEntry() {
     assert_eq!(
-        ::core::mem::size_of::<WGPUBindGroupLayoutBinding>(),
+        ::core::mem::size_of::<WGPUBindGroupLayoutEntry>(),
         28usize,
-        concat!("Size of: ", stringify!(WGPUBindGroupLayoutBinding))
+        concat!("Size of: ", stringify!(WGPUBindGroupLayoutEntry))
     );
     assert_eq!(
-        ::core::mem::align_of::<WGPUBindGroupLayoutBinding>(),
+        ::core::mem::align_of::<WGPUBindGroupLayoutEntry>(),
         4usize,
-        concat!("Alignment of ", stringify!(WGPUBindGroupLayoutBinding))
+        concat!("Alignment of ", stringify!(WGPUBindGroupLayoutEntry))
     );
     assert_eq!(
         unsafe {
-            &(*(::core::ptr::null::<WGPUBindGroupLayoutBinding>())).binding as *const _ as usize
+            &(*(::core::ptr::null::<WGPUBindGroupLayoutEntry>())).binding as *const _ as usize
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutBinding),
-        "::",
-        stringify!(binding)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutEntry),
+            "::",
+            stringify!(binding)
         )
     );
     assert_eq!(
         unsafe {
-            &(*(::core::ptr::null::<WGPUBindGroupLayoutBinding>())).visibility as *const _ as usize
+            &(*(::core::ptr::null::<WGPUBindGroupLayoutEntry>())).visibility as *const _ as usize
         },
         4usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutBinding),
-        "::",
-        stringify!(visibility)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutEntry),
+            "::",
+            stringify!(visibility)
         )
     );
     assert_eq!(
-        unsafe {
-            &(*(::core::ptr::null::<WGPUBindGroupLayoutBinding>())).type_ as *const _ as usize
-        },
+        unsafe { &(*(::core::ptr::null::<WGPUBindGroupLayoutEntry>())).type_ as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutBinding),
-        "::",
-        stringify!(type_)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutEntry),
+            "::",
+            stringify!(type_)
         )
     );
     assert_eq!(
         unsafe {
-            &(*(::core::ptr::null::<WGPUBindGroupLayoutBinding>())).hasDynamicOffset as *const _
+            &(*(::core::ptr::null::<WGPUBindGroupLayoutEntry>())).hasDynamicOffset as *const _
                 as usize
         },
         12usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutBinding),
-        "::",
-        stringify!(hasDynamicOffset)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutEntry),
+            "::",
+            stringify!(hasDynamicOffset)
         )
     );
     assert_eq!(
         unsafe {
-            &(*(::core::ptr::null::<WGPUBindGroupLayoutBinding>())).multisampled as *const _
-                as usize
+            &(*(::core::ptr::null::<WGPUBindGroupLayoutEntry>())).multisampled as *const _ as usize
         },
         13usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutBinding),
-        "::",
-        stringify!(multisampled)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutEntry),
+            "::",
+            stringify!(multisampled)
         )
     );
     assert_eq!(
         unsafe {
-            &(*(::core::ptr::null::<WGPUBindGroupLayoutBinding>())).textureDimension as *const _
+            &(*(::core::ptr::null::<WGPUBindGroupLayoutEntry>())).textureDimension as *const _
                 as usize
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutBinding),
-        "::",
-        stringify!(textureDimension)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutEntry),
+            "::",
+            stringify!(textureDimension)
         )
     );
     assert_eq!(
         unsafe {
-            &(*(::core::ptr::null::<WGPUBindGroupLayoutBinding>())).textureComponentType as *const _
+            &(*(::core::ptr::null::<WGPUBindGroupLayoutEntry>())).textureComponentType as *const _
                 as usize
         },
         20usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutBinding),
-        "::",
-        stringify!(textureComponentType)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutEntry),
+            "::",
+            stringify!(textureComponentType)
         )
     );
     assert_eq!(
         unsafe {
-            &(*(::core::ptr::null::<WGPUBindGroupLayoutBinding>())).storageTextureFormat as *const _
+            &(*(::core::ptr::null::<WGPUBindGroupLayoutEntry>())).storageTextureFormat as *const _
                 as usize
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutBinding),
-        "::",
-        stringify!(storageTextureFormat)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutEntry),
+            "::",
+            stringify!(storageTextureFormat)
         )
     );
 }
@@ -790,30 +787,30 @@ fn bindgen_test_layout_WGPUBlendDescriptor() {
         unsafe { &(*(::core::ptr::null::<WGPUBlendDescriptor>())).operation as *const _ as usize },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBlendDescriptor),
-        "::",
-        stringify!(operation)
+            "Offset of field: ",
+            stringify!(WGPUBlendDescriptor),
+            "::",
+            stringify!(operation)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBlendDescriptor>())).srcFactor as *const _ as usize },
         4usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBlendDescriptor),
-        "::",
-        stringify!(srcFactor)
+            "Offset of field: ",
+            stringify!(WGPUBlendDescriptor),
+            "::",
+            stringify!(srcFactor)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBlendDescriptor>())).dstFactor as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBlendDescriptor),
-        "::",
-        stringify!(dstFactor)
+            "Offset of field: ",
+            stringify!(WGPUBlendDescriptor),
+            "::",
+            stringify!(dstFactor)
         )
     );
 }
@@ -842,50 +839,50 @@ fn bindgen_test_layout_WGPUBufferCopyView() {
         unsafe { &(*(::core::ptr::null::<WGPUBufferCopyView>())).nextInChain as *const _ as usize },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBufferCopyView),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUBufferCopyView),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBufferCopyView>())).buffer as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBufferCopyView),
-        "::",
-        stringify!(buffer)
+            "Offset of field: ",
+            stringify!(WGPUBufferCopyView),
+            "::",
+            stringify!(buffer)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBufferCopyView>())).offset as *const _ as usize },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBufferCopyView),
-        "::",
-        stringify!(offset)
+            "Offset of field: ",
+            stringify!(WGPUBufferCopyView),
+            "::",
+            stringify!(offset)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBufferCopyView>())).rowPitch as *const _ as usize },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBufferCopyView),
-        "::",
-        stringify!(rowPitch)
+            "Offset of field: ",
+            stringify!(WGPUBufferCopyView),
+            "::",
+            stringify!(rowPitch)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBufferCopyView>())).imageHeight as *const _ as usize },
         28usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBufferCopyView),
-        "::",
-        stringify!(imageHeight)
+            "Offset of field: ",
+            stringify!(WGPUBufferCopyView),
+            "::",
+            stringify!(imageHeight)
         )
     );
 }
@@ -915,40 +912,40 @@ fn bindgen_test_layout_WGPUBufferDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBufferDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUBufferDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBufferDescriptor>())).label as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBufferDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUBufferDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBufferDescriptor>())).usage as *const _ as usize },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBufferDescriptor),
-        "::",
-        stringify!(usage)
+            "Offset of field: ",
+            stringify!(WGPUBufferDescriptor),
+            "::",
+            stringify!(usage)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBufferDescriptor>())).size as *const _ as usize },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBufferDescriptor),
-        "::",
-        stringify!(size)
+            "Offset of field: ",
+            stringify!(WGPUBufferDescriptor),
+            "::",
+            stringify!(size)
         )
     );
 }
@@ -976,40 +973,40 @@ fn bindgen_test_layout_WGPUColor() {
         unsafe { &(*(::core::ptr::null::<WGPUColor>())).r as *const _ as usize },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUColor),
-        "::",
-        stringify!(r)
+            "Offset of field: ",
+            stringify!(WGPUColor),
+            "::",
+            stringify!(r)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUColor>())).g as *const _ as usize },
         4usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUColor),
-        "::",
-        stringify!(g)
+            "Offset of field: ",
+            stringify!(WGPUColor),
+            "::",
+            stringify!(g)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUColor>())).b as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUColor),
-        "::",
-        stringify!(b)
+            "Offset of field: ",
+            stringify!(WGPUColor),
+            "::",
+            stringify!(b)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUColor>())).a as *const _ as usize },
         12usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUColor),
-        "::",
-        stringify!(a)
+            "Offset of field: ",
+            stringify!(WGPUColor),
+            "::",
+            stringify!(a)
         )
     );
 }
@@ -1038,10 +1035,10 @@ fn bindgen_test_layout_WGPUCommandBufferDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUCommandBufferDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUCommandBufferDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -1050,10 +1047,10 @@ fn bindgen_test_layout_WGPUCommandBufferDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUCommandBufferDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUCommandBufferDescriptor),
+            "::",
+            stringify!(label)
         )
     );
 }
@@ -1082,10 +1079,10 @@ fn bindgen_test_layout_WGPUCommandEncoderDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUCommandEncoderDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUCommandEncoderDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -1094,10 +1091,10 @@ fn bindgen_test_layout_WGPUCommandEncoderDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUCommandEncoderDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUCommandEncoderDescriptor),
+            "::",
+            stringify!(label)
         )
     );
 }
@@ -1125,10 +1122,10 @@ fn bindgen_test_layout_WGPUComputePassDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUComputePassDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUComputePassDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -1137,10 +1134,10 @@ fn bindgen_test_layout_WGPUComputePassDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUComputePassDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUComputePassDescriptor),
+            "::",
+            stringify!(label)
         )
     );
 }
@@ -1169,10 +1166,10 @@ fn bindgen_test_layout_WGPUCreateBufferMappedResult() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUCreateBufferMappedResult),
-        "::",
-        stringify!(buffer)
+            "Offset of field: ",
+            stringify!(WGPUCreateBufferMappedResult),
+            "::",
+            stringify!(buffer)
         )
     );
     assert_eq!(
@@ -1182,10 +1179,10 @@ fn bindgen_test_layout_WGPUCreateBufferMappedResult() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUCreateBufferMappedResult),
-        "::",
-        stringify!(dataLength)
+            "Offset of field: ",
+            stringify!(WGPUCreateBufferMappedResult),
+            "::",
+            stringify!(dataLength)
         )
     );
     assert_eq!(
@@ -1194,10 +1191,10 @@ fn bindgen_test_layout_WGPUCreateBufferMappedResult() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUCreateBufferMappedResult),
-        "::",
-        stringify!(data)
+            "Offset of field: ",
+            stringify!(WGPUCreateBufferMappedResult),
+            "::",
+            stringify!(data)
         )
     );
 }
@@ -1225,10 +1222,10 @@ fn bindgen_test_layout_WGPUDeviceProperties() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUDeviceProperties),
-        "::",
-        stringify!(textureCompressionBC)
+            "Offset of field: ",
+            stringify!(WGPUDeviceProperties),
+            "::",
+            stringify!(textureCompressionBC)
         )
     );
 }
@@ -1255,30 +1252,30 @@ fn bindgen_test_layout_WGPUExtent3D() {
         unsafe { &(*(::core::ptr::null::<WGPUExtent3D>())).width as *const _ as usize },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUExtent3D),
-        "::",
-        stringify!(width)
+            "Offset of field: ",
+            stringify!(WGPUExtent3D),
+            "::",
+            stringify!(width)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUExtent3D>())).height as *const _ as usize },
         4usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUExtent3D),
-        "::",
-        stringify!(height)
+            "Offset of field: ",
+            stringify!(WGPUExtent3D),
+            "::",
+            stringify!(height)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUExtent3D>())).depth as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUExtent3D),
-        "::",
-        stringify!(depth)
+            "Offset of field: ",
+            stringify!(WGPUExtent3D),
+            "::",
+            stringify!(depth)
         )
     );
 }
@@ -1307,20 +1304,20 @@ fn bindgen_test_layout_WGPUFenceDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUFenceDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUFenceDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUFenceDescriptor>())).label as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUFenceDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUFenceDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
@@ -1329,10 +1326,10 @@ fn bindgen_test_layout_WGPUFenceDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUFenceDescriptor),
-        "::",
-        stringify!(initialValue)
+            "Offset of field: ",
+            stringify!(WGPUFenceDescriptor),
+            "::",
+            stringify!(initialValue)
         )
     );
 }
@@ -1359,10 +1356,10 @@ fn bindgen_test_layout_WGPUInstanceDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUInstanceDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUInstanceDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
 }
@@ -1389,30 +1386,30 @@ fn bindgen_test_layout_WGPUOrigin3D() {
         unsafe { &(*(::core::ptr::null::<WGPUOrigin3D>())).x as *const _ as usize },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUOrigin3D),
-        "::",
-        stringify!(x)
+            "Offset of field: ",
+            stringify!(WGPUOrigin3D),
+            "::",
+            stringify!(x)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUOrigin3D>())).y as *const _ as usize },
         4usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUOrigin3D),
-        "::",
-        stringify!(y)
+            "Offset of field: ",
+            stringify!(WGPUOrigin3D),
+            "::",
+            stringify!(y)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUOrigin3D>())).z as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUOrigin3D),
-        "::",
-        stringify!(z)
+            "Offset of field: ",
+            stringify!(WGPUOrigin3D),
+            "::",
+            stringify!(z)
         )
     );
 }
@@ -1443,10 +1440,10 @@ fn bindgen_test_layout_WGPUPipelineLayoutDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUPipelineLayoutDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUPipelineLayoutDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -1455,10 +1452,10 @@ fn bindgen_test_layout_WGPUPipelineLayoutDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUPipelineLayoutDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUPipelineLayoutDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
@@ -1468,10 +1465,10 @@ fn bindgen_test_layout_WGPUPipelineLayoutDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUPipelineLayoutDescriptor),
-        "::",
-        stringify!(bindGroupLayoutCount)
+            "Offset of field: ",
+            stringify!(WGPUPipelineLayoutDescriptor),
+            "::",
+            stringify!(bindGroupLayoutCount)
         )
     );
     assert_eq!(
@@ -1481,10 +1478,10 @@ fn bindgen_test_layout_WGPUPipelineLayoutDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUPipelineLayoutDescriptor),
-        "::",
-        stringify!(bindGroupLayouts)
+            "Offset of field: ",
+            stringify!(WGPUPipelineLayoutDescriptor),
+            "::",
+            stringify!(bindGroupLayouts)
         )
     );
 }
@@ -1514,10 +1511,10 @@ fn bindgen_test_layout_WGPUProgrammableStageDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUProgrammableStageDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUProgrammableStageDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -1526,10 +1523,10 @@ fn bindgen_test_layout_WGPUProgrammableStageDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUProgrammableStageDescriptor),
-        "::",
-        stringify!(module)
+            "Offset of field: ",
+            stringify!(WGPUProgrammableStageDescriptor),
+            "::",
+            stringify!(module)
         )
     );
     assert_eq!(
@@ -1539,10 +1536,10 @@ fn bindgen_test_layout_WGPUProgrammableStageDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUProgrammableStageDescriptor),
-        "::",
-        stringify!(entryPoint)
+            "Offset of field: ",
+            stringify!(WGPUProgrammableStageDescriptor),
+            "::",
+            stringify!(entryPoint)
         )
     );
 }
@@ -1567,8 +1564,8 @@ fn bindgen_test_layout_WGPURasterizationStateDescriptor() {
         ::core::mem::align_of::<WGPURasterizationStateDescriptor>(),
         8usize,
         concat!(
-        "Alignment of ",
-        stringify!(WGPURasterizationStateDescriptor)
+            "Alignment of ",
+            stringify!(WGPURasterizationStateDescriptor)
         )
     );
     assert_eq!(
@@ -1578,10 +1575,10 @@ fn bindgen_test_layout_WGPURasterizationStateDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURasterizationStateDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPURasterizationStateDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -1591,10 +1588,10 @@ fn bindgen_test_layout_WGPURasterizationStateDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURasterizationStateDescriptor),
-        "::",
-        stringify!(frontFace)
+            "Offset of field: ",
+            stringify!(WGPURasterizationStateDescriptor),
+            "::",
+            stringify!(frontFace)
         )
     );
     assert_eq!(
@@ -1604,10 +1601,10 @@ fn bindgen_test_layout_WGPURasterizationStateDescriptor() {
         },
         12usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURasterizationStateDescriptor),
-        "::",
-        stringify!(cullMode)
+            "Offset of field: ",
+            stringify!(WGPURasterizationStateDescriptor),
+            "::",
+            stringify!(cullMode)
         )
     );
     assert_eq!(
@@ -1617,10 +1614,10 @@ fn bindgen_test_layout_WGPURasterizationStateDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURasterizationStateDescriptor),
-        "::",
-        stringify!(depthBias)
+            "Offset of field: ",
+            stringify!(WGPURasterizationStateDescriptor),
+            "::",
+            stringify!(depthBias)
         )
     );
     assert_eq!(
@@ -1630,10 +1627,10 @@ fn bindgen_test_layout_WGPURasterizationStateDescriptor() {
         },
         20usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURasterizationStateDescriptor),
-        "::",
-        stringify!(depthBiasSlopeScale)
+            "Offset of field: ",
+            stringify!(WGPURasterizationStateDescriptor),
+            "::",
+            stringify!(depthBiasSlopeScale)
         )
     );
     assert_eq!(
@@ -1643,10 +1640,10 @@ fn bindgen_test_layout_WGPURasterizationStateDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURasterizationStateDescriptor),
-        "::",
-        stringify!(depthBiasClamp)
+            "Offset of field: ",
+            stringify!(WGPURasterizationStateDescriptor),
+            "::",
+            stringify!(depthBiasClamp)
         )
     );
 }
@@ -1674,10 +1671,10 @@ fn bindgen_test_layout_WGPURenderBundleDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderBundleDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPURenderBundleDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -1686,10 +1683,10 @@ fn bindgen_test_layout_WGPURenderBundleDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderBundleDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPURenderBundleDescriptor),
+            "::",
+            stringify!(label)
         )
     );
 }
@@ -1714,8 +1711,8 @@ fn bindgen_test_layout_WGPURenderBundleEncoderDescriptor() {
         ::core::mem::align_of::<WGPURenderBundleEncoderDescriptor>(),
         8usize,
         concat!(
-        "Alignment of ",
-        stringify!(WGPURenderBundleEncoderDescriptor)
+            "Alignment of ",
+            stringify!(WGPURenderBundleEncoderDescriptor)
         )
     );
     assert_eq!(
@@ -1725,10 +1722,10 @@ fn bindgen_test_layout_WGPURenderBundleEncoderDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderBundleEncoderDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPURenderBundleEncoderDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -1738,10 +1735,10 @@ fn bindgen_test_layout_WGPURenderBundleEncoderDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderBundleEncoderDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPURenderBundleEncoderDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
@@ -1751,10 +1748,10 @@ fn bindgen_test_layout_WGPURenderBundleEncoderDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderBundleEncoderDescriptor),
-        "::",
-        stringify!(colorFormatsCount)
+            "Offset of field: ",
+            stringify!(WGPURenderBundleEncoderDescriptor),
+            "::",
+            stringify!(colorFormatsCount)
         )
     );
     assert_eq!(
@@ -1764,10 +1761,10 @@ fn bindgen_test_layout_WGPURenderBundleEncoderDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderBundleEncoderDescriptor),
-        "::",
-        stringify!(colorFormats)
+            "Offset of field: ",
+            stringify!(WGPURenderBundleEncoderDescriptor),
+            "::",
+            stringify!(colorFormats)
         )
     );
     assert_eq!(
@@ -1777,10 +1774,10 @@ fn bindgen_test_layout_WGPURenderBundleEncoderDescriptor() {
         },
         32usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderBundleEncoderDescriptor),
-        "::",
-        stringify!(depthStencilFormat)
+            "Offset of field: ",
+            stringify!(WGPURenderBundleEncoderDescriptor),
+            "::",
+            stringify!(depthStencilFormat)
         )
     );
     assert_eq!(
@@ -1790,10 +1787,10 @@ fn bindgen_test_layout_WGPURenderBundleEncoderDescriptor() {
         },
         36usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderBundleEncoderDescriptor),
-        "::",
-        stringify!(sampleCount)
+            "Offset of field: ",
+            stringify!(WGPURenderBundleEncoderDescriptor),
+            "::",
+            stringify!(sampleCount)
         )
     );
 }
@@ -1814,16 +1811,16 @@ fn bindgen_test_layout_WGPURenderPassDepthStencilAttachmentDescriptor() {
         ::core::mem::size_of::<WGPURenderPassDepthStencilAttachmentDescriptor>(),
         32usize,
         concat!(
-        "Size of: ",
-        stringify!(WGPURenderPassDepthStencilAttachmentDescriptor)
+            "Size of: ",
+            stringify!(WGPURenderPassDepthStencilAttachmentDescriptor)
         )
     );
     assert_eq!(
         ::core::mem::align_of::<WGPURenderPassDepthStencilAttachmentDescriptor>(),
         8usize,
         concat!(
-        "Alignment of ",
-        stringify!(WGPURenderPassDepthStencilAttachmentDescriptor)
+            "Alignment of ",
+            stringify!(WGPURenderPassDepthStencilAttachmentDescriptor)
         )
     );
     assert_eq!(
@@ -1833,10 +1830,10 @@ fn bindgen_test_layout_WGPURenderPassDepthStencilAttachmentDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
-        "::",
-        stringify!(attachment)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
+            "::",
+            stringify!(attachment)
         )
     );
     assert_eq!(
@@ -1846,10 +1843,10 @@ fn bindgen_test_layout_WGPURenderPassDepthStencilAttachmentDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
-        "::",
-        stringify!(depthLoadOp)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
+            "::",
+            stringify!(depthLoadOp)
         )
     );
     assert_eq!(
@@ -1859,10 +1856,10 @@ fn bindgen_test_layout_WGPURenderPassDepthStencilAttachmentDescriptor() {
         },
         12usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
-        "::",
-        stringify!(depthStoreOp)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
+            "::",
+            stringify!(depthStoreOp)
         )
     );
     assert_eq!(
@@ -1872,10 +1869,10 @@ fn bindgen_test_layout_WGPURenderPassDepthStencilAttachmentDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
-        "::",
-        stringify!(clearDepth)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
+            "::",
+            stringify!(clearDepth)
         )
     );
     assert_eq!(
@@ -1885,10 +1882,10 @@ fn bindgen_test_layout_WGPURenderPassDepthStencilAttachmentDescriptor() {
         },
         20usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
-        "::",
-        stringify!(stencilLoadOp)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
+            "::",
+            stringify!(stencilLoadOp)
         )
     );
     assert_eq!(
@@ -1898,10 +1895,10 @@ fn bindgen_test_layout_WGPURenderPassDepthStencilAttachmentDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
-        "::",
-        stringify!(stencilStoreOp)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
+            "::",
+            stringify!(stencilStoreOp)
         )
     );
     assert_eq!(
@@ -1911,10 +1908,10 @@ fn bindgen_test_layout_WGPURenderPassDepthStencilAttachmentDescriptor() {
         },
         28usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
-        "::",
-        stringify!(clearStencil)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDepthStencilAttachmentDescriptor),
+            "::",
+            stringify!(clearStencil)
         )
     );
 }
@@ -1951,20 +1948,20 @@ fn bindgen_test_layout_WGPUSamplerDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUSamplerDescriptor>())).label as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
@@ -1973,10 +1970,10 @@ fn bindgen_test_layout_WGPUSamplerDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(addressModeU)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(addressModeU)
         )
     );
     assert_eq!(
@@ -1985,10 +1982,10 @@ fn bindgen_test_layout_WGPUSamplerDescriptor() {
         },
         20usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(addressModeV)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(addressModeV)
         )
     );
     assert_eq!(
@@ -1997,10 +1994,10 @@ fn bindgen_test_layout_WGPUSamplerDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(addressModeW)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(addressModeW)
         )
     );
     assert_eq!(
@@ -2009,10 +2006,10 @@ fn bindgen_test_layout_WGPUSamplerDescriptor() {
         },
         28usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(magFilter)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(magFilter)
         )
     );
     assert_eq!(
@@ -2021,10 +2018,10 @@ fn bindgen_test_layout_WGPUSamplerDescriptor() {
         },
         32usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(minFilter)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(minFilter)
         )
     );
     assert_eq!(
@@ -2033,10 +2030,10 @@ fn bindgen_test_layout_WGPUSamplerDescriptor() {
         },
         36usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(mipmapFilter)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(mipmapFilter)
         )
     );
     assert_eq!(
@@ -2045,10 +2042,10 @@ fn bindgen_test_layout_WGPUSamplerDescriptor() {
         },
         40usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(lodMinClamp)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(lodMinClamp)
         )
     );
     assert_eq!(
@@ -2057,20 +2054,71 @@ fn bindgen_test_layout_WGPUSamplerDescriptor() {
         },
         44usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(lodMaxClamp)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(lodMaxClamp)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUSamplerDescriptor>())).compare as *const _ as usize },
         48usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSamplerDescriptor),
-        "::",
-        stringify!(compare)
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptor),
+            "::",
+            stringify!(compare)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct WGPUSamplerDescriptorDummyAnisotropicFiltering {
+    pub chain: WGPUChainedStruct,
+    pub maxAnisotropy: f32,
+}
+#[test]
+fn bindgen_test_layout_WGPUSamplerDescriptorDummyAnisotropicFiltering() {
+    assert_eq!(
+        ::core::mem::size_of::<WGPUSamplerDescriptorDummyAnisotropicFiltering>(),
+        24usize,
+        concat!(
+            "Size of: ",
+            stringify!(WGPUSamplerDescriptorDummyAnisotropicFiltering)
+        )
+    );
+    assert_eq!(
+        ::core::mem::align_of::<WGPUSamplerDescriptorDummyAnisotropicFiltering>(),
+        8usize,
+        concat!(
+            "Alignment of ",
+            stringify!(WGPUSamplerDescriptorDummyAnisotropicFiltering)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<WGPUSamplerDescriptorDummyAnisotropicFiltering>())).chain
+                as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptorDummyAnisotropicFiltering),
+            "::",
+            stringify!(chain)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<WGPUSamplerDescriptorDummyAnisotropicFiltering>()))
+                .maxAnisotropy as *const _ as usize
+        },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(WGPUSamplerDescriptorDummyAnisotropicFiltering),
+            "::",
+            stringify!(maxAnisotropy)
         )
     );
 }
@@ -2100,10 +2148,10 @@ fn bindgen_test_layout_WGPUShaderModuleDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUShaderModuleDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUShaderModuleDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -2112,10 +2160,10 @@ fn bindgen_test_layout_WGPUShaderModuleDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUShaderModuleDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUShaderModuleDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
@@ -2124,10 +2172,10 @@ fn bindgen_test_layout_WGPUShaderModuleDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUShaderModuleDescriptor),
-        "::",
-        stringify!(codeSize)
+            "Offset of field: ",
+            stringify!(WGPUShaderModuleDescriptor),
+            "::",
+            stringify!(codeSize)
         )
     );
     assert_eq!(
@@ -2136,10 +2184,10 @@ fn bindgen_test_layout_WGPUShaderModuleDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUShaderModuleDescriptor),
-        "::",
-        stringify!(code)
+            "Offset of field: ",
+            stringify!(WGPUShaderModuleDescriptor),
+            "::",
+            stringify!(code)
         )
     );
 }
@@ -2169,10 +2217,10 @@ fn bindgen_test_layout_WGPUStencilStateFaceDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUStencilStateFaceDescriptor),
-        "::",
-        stringify!(compare)
+            "Offset of field: ",
+            stringify!(WGPUStencilStateFaceDescriptor),
+            "::",
+            stringify!(compare)
         )
     );
     assert_eq!(
@@ -2181,10 +2229,10 @@ fn bindgen_test_layout_WGPUStencilStateFaceDescriptor() {
         },
         4usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUStencilStateFaceDescriptor),
-        "::",
-        stringify!(failOp)
+            "Offset of field: ",
+            stringify!(WGPUStencilStateFaceDescriptor),
+            "::",
+            stringify!(failOp)
         )
     );
     assert_eq!(
@@ -2194,10 +2242,10 @@ fn bindgen_test_layout_WGPUStencilStateFaceDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUStencilStateFaceDescriptor),
-        "::",
-        stringify!(depthFailOp)
+            "Offset of field: ",
+            stringify!(WGPUStencilStateFaceDescriptor),
+            "::",
+            stringify!(depthFailOp)
         )
     );
     assert_eq!(
@@ -2206,10 +2254,10 @@ fn bindgen_test_layout_WGPUStencilStateFaceDescriptor() {
         },
         12usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUStencilStateFaceDescriptor),
-        "::",
-        stringify!(passOp)
+            "Offset of field: ",
+            stringify!(WGPUStencilStateFaceDescriptor),
+            "::",
+            stringify!(passOp)
         )
     );
 }
@@ -2237,20 +2285,20 @@ fn bindgen_test_layout_WGPUSurfaceDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUSurfaceDescriptor>())).label as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptor),
+            "::",
+            stringify!(label)
         )
     );
 }
@@ -2266,16 +2314,16 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromHTMLCanvasId() {
         ::core::mem::size_of::<WGPUSurfaceDescriptorFromHTMLCanvasId>(),
         24usize,
         concat!(
-        "Size of: ",
-        stringify!(WGPUSurfaceDescriptorFromHTMLCanvasId)
+            "Size of: ",
+            stringify!(WGPUSurfaceDescriptorFromHTMLCanvasId)
         )
     );
     assert_eq!(
         ::core::mem::align_of::<WGPUSurfaceDescriptorFromHTMLCanvasId>(),
         8usize,
         concat!(
-        "Alignment of ",
-        stringify!(WGPUSurfaceDescriptorFromHTMLCanvasId)
+            "Alignment of ",
+            stringify!(WGPUSurfaceDescriptorFromHTMLCanvasId)
         )
     );
     assert_eq!(
@@ -2285,10 +2333,10 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromHTMLCanvasId() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptorFromHTMLCanvasId),
-        "::",
-        stringify!(chain)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptorFromHTMLCanvasId),
+            "::",
+            stringify!(chain)
         )
     );
     assert_eq!(
@@ -2298,10 +2346,10 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromHTMLCanvasId() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptorFromHTMLCanvasId),
-        "::",
-        stringify!(id)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptorFromHTMLCanvasId),
+            "::",
+            stringify!(id)
         )
     );
 }
@@ -2322,8 +2370,8 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromMetalLayer() {
         ::core::mem::align_of::<WGPUSurfaceDescriptorFromMetalLayer>(),
         8usize,
         concat!(
-        "Alignment of ",
-        stringify!(WGPUSurfaceDescriptorFromMetalLayer)
+            "Alignment of ",
+            stringify!(WGPUSurfaceDescriptorFromMetalLayer)
         )
     );
     assert_eq!(
@@ -2333,10 +2381,10 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromMetalLayer() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptorFromMetalLayer),
-        "::",
-        stringify!(chain)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptorFromMetalLayer),
+            "::",
+            stringify!(chain)
         )
     );
     assert_eq!(
@@ -2346,10 +2394,10 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromMetalLayer() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptorFromMetalLayer),
-        "::",
-        stringify!(layer)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptorFromMetalLayer),
+            "::",
+            stringify!(layer)
         )
     );
 }
@@ -2366,16 +2414,16 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromWindowsHWND() {
         ::core::mem::size_of::<WGPUSurfaceDescriptorFromWindowsHWND>(),
         32usize,
         concat!(
-        "Size of: ",
-        stringify!(WGPUSurfaceDescriptorFromWindowsHWND)
+            "Size of: ",
+            stringify!(WGPUSurfaceDescriptorFromWindowsHWND)
         )
     );
     assert_eq!(
         ::core::mem::align_of::<WGPUSurfaceDescriptorFromWindowsHWND>(),
         8usize,
         concat!(
-        "Alignment of ",
-        stringify!(WGPUSurfaceDescriptorFromWindowsHWND)
+            "Alignment of ",
+            stringify!(WGPUSurfaceDescriptorFromWindowsHWND)
         )
     );
     assert_eq!(
@@ -2385,10 +2433,10 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromWindowsHWND() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptorFromWindowsHWND),
-        "::",
-        stringify!(chain)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptorFromWindowsHWND),
+            "::",
+            stringify!(chain)
         )
     );
     assert_eq!(
@@ -2398,10 +2446,10 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromWindowsHWND() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptorFromWindowsHWND),
-        "::",
-        stringify!(hinstance)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptorFromWindowsHWND),
+            "::",
+            stringify!(hinstance)
         )
     );
     assert_eq!(
@@ -2411,10 +2459,10 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromWindowsHWND() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptorFromWindowsHWND),
-        "::",
-        stringify!(hwnd)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptorFromWindowsHWND),
+            "::",
+            stringify!(hwnd)
         )
     );
 }
@@ -2443,10 +2491,10 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromXlib() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptorFromXlib),
-        "::",
-        stringify!(chain)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptorFromXlib),
+            "::",
+            stringify!(chain)
         )
     );
     assert_eq!(
@@ -2455,10 +2503,10 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromXlib() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptorFromXlib),
-        "::",
-        stringify!(display)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptorFromXlib),
+            "::",
+            stringify!(display)
         )
     );
     assert_eq!(
@@ -2467,10 +2515,10 @@ fn bindgen_test_layout_WGPUSurfaceDescriptorFromXlib() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSurfaceDescriptorFromXlib),
-        "::",
-        stringify!(window)
+            "Offset of field: ",
+            stringify!(WGPUSurfaceDescriptorFromXlib),
+            "::",
+            stringify!(window)
         )
     );
 }
@@ -2504,60 +2552,60 @@ fn bindgen_test_layout_WGPUSwapChainDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSwapChainDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUSwapChainDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUSwapChainDescriptor>())).label as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSwapChainDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUSwapChainDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUSwapChainDescriptor>())).usage as *const _ as usize },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSwapChainDescriptor),
-        "::",
-        stringify!(usage)
+            "Offset of field: ",
+            stringify!(WGPUSwapChainDescriptor),
+            "::",
+            stringify!(usage)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUSwapChainDescriptor>())).format as *const _ as usize },
         20usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSwapChainDescriptor),
-        "::",
-        stringify!(format)
+            "Offset of field: ",
+            stringify!(WGPUSwapChainDescriptor),
+            "::",
+            stringify!(format)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUSwapChainDescriptor>())).width as *const _ as usize },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSwapChainDescriptor),
-        "::",
-        stringify!(width)
+            "Offset of field: ",
+            stringify!(WGPUSwapChainDescriptor),
+            "::",
+            stringify!(width)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUSwapChainDescriptor>())).height as *const _ as usize },
         28usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSwapChainDescriptor),
-        "::",
-        stringify!(height)
+            "Offset of field: ",
+            stringify!(WGPUSwapChainDescriptor),
+            "::",
+            stringify!(height)
         )
     );
     assert_eq!(
@@ -2566,10 +2614,10 @@ fn bindgen_test_layout_WGPUSwapChainDescriptor() {
         },
         32usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSwapChainDescriptor),
-        "::",
-        stringify!(presentMode)
+            "Offset of field: ",
+            stringify!(WGPUSwapChainDescriptor),
+            "::",
+            stringify!(presentMode)
         )
     );
     assert_eq!(
@@ -2578,10 +2626,10 @@ fn bindgen_test_layout_WGPUSwapChainDescriptor() {
         },
         40usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUSwapChainDescriptor),
-        "::",
-        stringify!(implementation)
+            "Offset of field: ",
+            stringify!(WGPUSwapChainDescriptor),
+            "::",
+            stringify!(implementation)
         )
     );
 }
@@ -2616,10 +2664,10 @@ fn bindgen_test_layout_WGPUTextureViewDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureViewDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUTextureViewDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -2628,10 +2676,10 @@ fn bindgen_test_layout_WGPUTextureViewDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureViewDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUTextureViewDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
@@ -2640,10 +2688,10 @@ fn bindgen_test_layout_WGPUTextureViewDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureViewDescriptor),
-        "::",
-        stringify!(format)
+            "Offset of field: ",
+            stringify!(WGPUTextureViewDescriptor),
+            "::",
+            stringify!(format)
         )
     );
     assert_eq!(
@@ -2652,10 +2700,10 @@ fn bindgen_test_layout_WGPUTextureViewDescriptor() {
         },
         20usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureViewDescriptor),
-        "::",
-        stringify!(dimension)
+            "Offset of field: ",
+            stringify!(WGPUTextureViewDescriptor),
+            "::",
+            stringify!(dimension)
         )
     );
     assert_eq!(
@@ -2664,10 +2712,10 @@ fn bindgen_test_layout_WGPUTextureViewDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureViewDescriptor),
-        "::",
-        stringify!(baseMipLevel)
+            "Offset of field: ",
+            stringify!(WGPUTextureViewDescriptor),
+            "::",
+            stringify!(baseMipLevel)
         )
     );
     assert_eq!(
@@ -2677,10 +2725,10 @@ fn bindgen_test_layout_WGPUTextureViewDescriptor() {
         },
         28usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureViewDescriptor),
-        "::",
-        stringify!(mipLevelCount)
+            "Offset of field: ",
+            stringify!(WGPUTextureViewDescriptor),
+            "::",
+            stringify!(mipLevelCount)
         )
     );
     assert_eq!(
@@ -2690,10 +2738,10 @@ fn bindgen_test_layout_WGPUTextureViewDescriptor() {
         },
         32usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureViewDescriptor),
-        "::",
-        stringify!(baseArrayLayer)
+            "Offset of field: ",
+            stringify!(WGPUTextureViewDescriptor),
+            "::",
+            stringify!(baseArrayLayer)
         )
     );
     assert_eq!(
@@ -2703,10 +2751,10 @@ fn bindgen_test_layout_WGPUTextureViewDescriptor() {
         },
         36usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureViewDescriptor),
-        "::",
-        stringify!(arrayLayerCount)
+            "Offset of field: ",
+            stringify!(WGPUTextureViewDescriptor),
+            "::",
+            stringify!(arrayLayerCount)
         )
     );
     assert_eq!(
@@ -2715,10 +2763,10 @@ fn bindgen_test_layout_WGPUTextureViewDescriptor() {
         },
         40usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureViewDescriptor),
-        "::",
-        stringify!(aspect)
+            "Offset of field: ",
+            stringify!(WGPUTextureViewDescriptor),
+            "::",
+            stringify!(aspect)
         )
     );
 }
@@ -2747,10 +2795,10 @@ fn bindgen_test_layout_WGPUVertexAttributeDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexAttributeDescriptor),
-        "::",
-        stringify!(format)
+            "Offset of field: ",
+            stringify!(WGPUVertexAttributeDescriptor),
+            "::",
+            stringify!(format)
         )
     );
     assert_eq!(
@@ -2759,10 +2807,10 @@ fn bindgen_test_layout_WGPUVertexAttributeDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexAttributeDescriptor),
-        "::",
-        stringify!(offset)
+            "Offset of field: ",
+            stringify!(WGPUVertexAttributeDescriptor),
+            "::",
+            stringify!(offset)
         )
     );
     assert_eq!(
@@ -2772,10 +2820,10 @@ fn bindgen_test_layout_WGPUVertexAttributeDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexAttributeDescriptor),
-        "::",
-        stringify!(shaderLocation)
+            "Offset of field: ",
+            stringify!(WGPUVertexAttributeDescriptor),
+            "::",
+            stringify!(shaderLocation)
         )
     );
 }
@@ -2786,7 +2834,7 @@ pub struct WGPUBindGroupDescriptor {
     pub label: *const libc::c_char,
     pub layout: WGPUBindGroupLayout,
     pub bindingCount: u32,
-    pub bindings: *const WGPUBindGroupBinding,
+    pub bindings: *const WGPUBindGroupEntry,
 }
 #[test]
 fn bindgen_test_layout_WGPUBindGroupDescriptor() {
@@ -2806,30 +2854,30 @@ fn bindgen_test_layout_WGPUBindGroupDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBindGroupDescriptor>())).label as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUBindGroupDescriptor>())).layout as *const _ as usize },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupDescriptor),
-        "::",
-        stringify!(layout)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupDescriptor),
+            "::",
+            stringify!(layout)
         )
     );
     assert_eq!(
@@ -2838,10 +2886,10 @@ fn bindgen_test_layout_WGPUBindGroupDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupDescriptor),
-        "::",
-        stringify!(bindingCount)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupDescriptor),
+            "::",
+            stringify!(bindingCount)
         )
     );
     assert_eq!(
@@ -2850,10 +2898,10 @@ fn bindgen_test_layout_WGPUBindGroupDescriptor() {
         },
         32usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupDescriptor),
-        "::",
-        stringify!(bindings)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupDescriptor),
+            "::",
+            stringify!(bindings)
         )
     );
 }
@@ -2863,7 +2911,7 @@ pub struct WGPUBindGroupLayoutDescriptor {
     pub nextInChain: *const WGPUChainedStruct,
     pub label: *const libc::c_char,
     pub bindingCount: u32,
-    pub bindings: *const WGPUBindGroupLayoutBinding,
+    pub bindings: *const WGPUBindGroupLayoutEntry,
 }
 #[test]
 fn bindgen_test_layout_WGPUBindGroupLayoutDescriptor() {
@@ -2884,10 +2932,10 @@ fn bindgen_test_layout_WGPUBindGroupLayoutDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -2896,10 +2944,10 @@ fn bindgen_test_layout_WGPUBindGroupLayoutDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
@@ -2909,10 +2957,10 @@ fn bindgen_test_layout_WGPUBindGroupLayoutDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutDescriptor),
-        "::",
-        stringify!(bindingCount)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutDescriptor),
+            "::",
+            stringify!(bindingCount)
         )
     );
     assert_eq!(
@@ -2921,10 +2969,10 @@ fn bindgen_test_layout_WGPUBindGroupLayoutDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUBindGroupLayoutDescriptor),
-        "::",
-        stringify!(bindings)
+            "Offset of field: ",
+            stringify!(WGPUBindGroupLayoutDescriptor),
+            "::",
+            stringify!(bindings)
         )
     );
 }
@@ -2955,10 +3003,10 @@ fn bindgen_test_layout_WGPUColorStateDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUColorStateDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUColorStateDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -2967,10 +3015,10 @@ fn bindgen_test_layout_WGPUColorStateDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUColorStateDescriptor),
-        "::",
-        stringify!(format)
+            "Offset of field: ",
+            stringify!(WGPUColorStateDescriptor),
+            "::",
+            stringify!(format)
         )
     );
     assert_eq!(
@@ -2979,10 +3027,10 @@ fn bindgen_test_layout_WGPUColorStateDescriptor() {
         },
         12usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUColorStateDescriptor),
-        "::",
-        stringify!(alphaBlend)
+            "Offset of field: ",
+            stringify!(WGPUColorStateDescriptor),
+            "::",
+            stringify!(alphaBlend)
         )
     );
     assert_eq!(
@@ -2991,10 +3039,10 @@ fn bindgen_test_layout_WGPUColorStateDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUColorStateDescriptor),
-        "::",
-        stringify!(colorBlend)
+            "Offset of field: ",
+            stringify!(WGPUColorStateDescriptor),
+            "::",
+            stringify!(colorBlend)
         )
     );
     assert_eq!(
@@ -3003,10 +3051,10 @@ fn bindgen_test_layout_WGPUColorStateDescriptor() {
         },
         36usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUColorStateDescriptor),
-        "::",
-        stringify!(writeMask)
+            "Offset of field: ",
+            stringify!(WGPUColorStateDescriptor),
+            "::",
+            stringify!(writeMask)
         )
     );
 }
@@ -3037,10 +3085,10 @@ fn bindgen_test_layout_WGPUComputePipelineDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUComputePipelineDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUComputePipelineDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -3049,10 +3097,10 @@ fn bindgen_test_layout_WGPUComputePipelineDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUComputePipelineDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUComputePipelineDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
@@ -3061,10 +3109,10 @@ fn bindgen_test_layout_WGPUComputePipelineDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUComputePipelineDescriptor),
-        "::",
-        stringify!(layout)
+            "Offset of field: ",
+            stringify!(WGPUComputePipelineDescriptor),
+            "::",
+            stringify!(layout)
         )
     );
     assert_eq!(
@@ -3074,10 +3122,10 @@ fn bindgen_test_layout_WGPUComputePipelineDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUComputePipelineDescriptor),
-        "::",
-        stringify!(computeStage)
+            "Offset of field: ",
+            stringify!(WGPUComputePipelineDescriptor),
+            "::",
+            stringify!(computeStage)
         )
     );
 }
@@ -3112,10 +3160,10 @@ fn bindgen_test_layout_WGPUDepthStencilStateDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUDepthStencilStateDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUDepthStencilStateDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -3124,10 +3172,10 @@ fn bindgen_test_layout_WGPUDepthStencilStateDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUDepthStencilStateDescriptor),
-        "::",
-        stringify!(format)
+            "Offset of field: ",
+            stringify!(WGPUDepthStencilStateDescriptor),
+            "::",
+            stringify!(format)
         )
     );
     assert_eq!(
@@ -3137,10 +3185,10 @@ fn bindgen_test_layout_WGPUDepthStencilStateDescriptor() {
         },
         12usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUDepthStencilStateDescriptor),
-        "::",
-        stringify!(depthWriteEnabled)
+            "Offset of field: ",
+            stringify!(WGPUDepthStencilStateDescriptor),
+            "::",
+            stringify!(depthWriteEnabled)
         )
     );
     assert_eq!(
@@ -3150,10 +3198,10 @@ fn bindgen_test_layout_WGPUDepthStencilStateDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUDepthStencilStateDescriptor),
-        "::",
-        stringify!(depthCompare)
+            "Offset of field: ",
+            stringify!(WGPUDepthStencilStateDescriptor),
+            "::",
+            stringify!(depthCompare)
         )
     );
     assert_eq!(
@@ -3163,10 +3211,10 @@ fn bindgen_test_layout_WGPUDepthStencilStateDescriptor() {
         },
         20usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUDepthStencilStateDescriptor),
-        "::",
-        stringify!(stencilFront)
+            "Offset of field: ",
+            stringify!(WGPUDepthStencilStateDescriptor),
+            "::",
+            stringify!(stencilFront)
         )
     );
     assert_eq!(
@@ -3176,10 +3224,10 @@ fn bindgen_test_layout_WGPUDepthStencilStateDescriptor() {
         },
         36usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUDepthStencilStateDescriptor),
-        "::",
-        stringify!(stencilBack)
+            "Offset of field: ",
+            stringify!(WGPUDepthStencilStateDescriptor),
+            "::",
+            stringify!(stencilBack)
         )
     );
     assert_eq!(
@@ -3189,10 +3237,10 @@ fn bindgen_test_layout_WGPUDepthStencilStateDescriptor() {
         },
         52usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUDepthStencilStateDescriptor),
-        "::",
-        stringify!(stencilReadMask)
+            "Offset of field: ",
+            stringify!(WGPUDepthStencilStateDescriptor),
+            "::",
+            stringify!(stencilReadMask)
         )
     );
     assert_eq!(
@@ -3202,10 +3250,10 @@ fn bindgen_test_layout_WGPUDepthStencilStateDescriptor() {
         },
         56usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUDepthStencilStateDescriptor),
-        "::",
-        stringify!(stencilWriteMask)
+            "Offset of field: ",
+            stringify!(WGPUDepthStencilStateDescriptor),
+            "::",
+            stringify!(stencilWriteMask)
         )
     );
 }
@@ -3224,16 +3272,16 @@ fn bindgen_test_layout_WGPURenderPassColorAttachmentDescriptor() {
         ::core::mem::size_of::<WGPURenderPassColorAttachmentDescriptor>(),
         40usize,
         concat!(
-        "Size of: ",
-        stringify!(WGPURenderPassColorAttachmentDescriptor)
+            "Size of: ",
+            stringify!(WGPURenderPassColorAttachmentDescriptor)
         )
     );
     assert_eq!(
         ::core::mem::align_of::<WGPURenderPassColorAttachmentDescriptor>(),
         8usize,
         concat!(
-        "Alignment of ",
-        stringify!(WGPURenderPassColorAttachmentDescriptor)
+            "Alignment of ",
+            stringify!(WGPURenderPassColorAttachmentDescriptor)
         )
     );
     assert_eq!(
@@ -3243,10 +3291,10 @@ fn bindgen_test_layout_WGPURenderPassColorAttachmentDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassColorAttachmentDescriptor),
-        "::",
-        stringify!(attachment)
+            "Offset of field: ",
+            stringify!(WGPURenderPassColorAttachmentDescriptor),
+            "::",
+            stringify!(attachment)
         )
     );
     assert_eq!(
@@ -3256,10 +3304,10 @@ fn bindgen_test_layout_WGPURenderPassColorAttachmentDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassColorAttachmentDescriptor),
-        "::",
-        stringify!(resolveTarget)
+            "Offset of field: ",
+            stringify!(WGPURenderPassColorAttachmentDescriptor),
+            "::",
+            stringify!(resolveTarget)
         )
     );
     assert_eq!(
@@ -3269,10 +3317,10 @@ fn bindgen_test_layout_WGPURenderPassColorAttachmentDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassColorAttachmentDescriptor),
-        "::",
-        stringify!(loadOp)
+            "Offset of field: ",
+            stringify!(WGPURenderPassColorAttachmentDescriptor),
+            "::",
+            stringify!(loadOp)
         )
     );
     assert_eq!(
@@ -3282,10 +3330,10 @@ fn bindgen_test_layout_WGPURenderPassColorAttachmentDescriptor() {
         },
         20usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassColorAttachmentDescriptor),
-        "::",
-        stringify!(storeOp)
+            "Offset of field: ",
+            stringify!(WGPURenderPassColorAttachmentDescriptor),
+            "::",
+            stringify!(storeOp)
         )
     );
     assert_eq!(
@@ -3295,10 +3343,61 @@ fn bindgen_test_layout_WGPURenderPassColorAttachmentDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassColorAttachmentDescriptor),
-        "::",
-        stringify!(clearColor)
+            "Offset of field: ",
+            stringify!(WGPURenderPassColorAttachmentDescriptor),
+            "::",
+            stringify!(clearColor)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct WGPURenderPipelineDescriptorDummyExtension {
+    pub chain: WGPUChainedStruct,
+    pub dummyStage: WGPUProgrammableStageDescriptor,
+}
+#[test]
+fn bindgen_test_layout_WGPURenderPipelineDescriptorDummyExtension() {
+    assert_eq!(
+        ::core::mem::size_of::<WGPURenderPipelineDescriptorDummyExtension>(),
+        40usize,
+        concat!(
+            "Size of: ",
+            stringify!(WGPURenderPipelineDescriptorDummyExtension)
+        )
+    );
+    assert_eq!(
+        ::core::mem::align_of::<WGPURenderPipelineDescriptorDummyExtension>(),
+        8usize,
+        concat!(
+            "Alignment of ",
+            stringify!(WGPURenderPipelineDescriptorDummyExtension)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<WGPURenderPipelineDescriptorDummyExtension>())).chain
+                as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptorDummyExtension),
+            "::",
+            stringify!(chain)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<WGPURenderPipelineDescriptorDummyExtension>())).dummyStage
+                as *const _ as usize
+        },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptorDummyExtension),
+            "::",
+            stringify!(dummyStage)
         )
     );
 }
@@ -3329,50 +3428,50 @@ fn bindgen_test_layout_WGPUTextureCopyView() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureCopyView),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUTextureCopyView),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUTextureCopyView>())).texture as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureCopyView),
-        "::",
-        stringify!(texture)
+            "Offset of field: ",
+            stringify!(WGPUTextureCopyView),
+            "::",
+            stringify!(texture)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUTextureCopyView>())).mipLevel as *const _ as usize },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureCopyView),
-        "::",
-        stringify!(mipLevel)
+            "Offset of field: ",
+            stringify!(WGPUTextureCopyView),
+            "::",
+            stringify!(mipLevel)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUTextureCopyView>())).arrayLayer as *const _ as usize },
         20usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureCopyView),
-        "::",
-        stringify!(arrayLayer)
+            "Offset of field: ",
+            stringify!(WGPUTextureCopyView),
+            "::",
+            stringify!(arrayLayer)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUTextureCopyView>())).origin as *const _ as usize },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureCopyView),
-        "::",
-        stringify!(origin)
+            "Offset of field: ",
+            stringify!(WGPUTextureCopyView),
+            "::",
+            stringify!(origin)
         )
     );
 }
@@ -3407,30 +3506,30 @@ fn bindgen_test_layout_WGPUTextureDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUTextureDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUTextureDescriptor>())).label as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPUTextureDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUTextureDescriptor>())).usage as *const _ as usize },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureDescriptor),
-        "::",
-        stringify!(usage)
+            "Offset of field: ",
+            stringify!(WGPUTextureDescriptor),
+            "::",
+            stringify!(usage)
         )
     );
     assert_eq!(
@@ -3439,20 +3538,20 @@ fn bindgen_test_layout_WGPUTextureDescriptor() {
         },
         20usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureDescriptor),
-        "::",
-        stringify!(dimension)
+            "Offset of field: ",
+            stringify!(WGPUTextureDescriptor),
+            "::",
+            stringify!(dimension)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUTextureDescriptor>())).size as *const _ as usize },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureDescriptor),
-        "::",
-        stringify!(size)
+            "Offset of field: ",
+            stringify!(WGPUTextureDescriptor),
+            "::",
+            stringify!(size)
         )
     );
     assert_eq!(
@@ -3461,20 +3560,20 @@ fn bindgen_test_layout_WGPUTextureDescriptor() {
         },
         36usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureDescriptor),
-        "::",
-        stringify!(arrayLayerCount)
+            "Offset of field: ",
+            stringify!(WGPUTextureDescriptor),
+            "::",
+            stringify!(arrayLayerCount)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPUTextureDescriptor>())).format as *const _ as usize },
         40usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureDescriptor),
-        "::",
-        stringify!(format)
+            "Offset of field: ",
+            stringify!(WGPUTextureDescriptor),
+            "::",
+            stringify!(format)
         )
     );
     assert_eq!(
@@ -3483,10 +3582,10 @@ fn bindgen_test_layout_WGPUTextureDescriptor() {
         },
         44usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureDescriptor),
-        "::",
-        stringify!(mipLevelCount)
+            "Offset of field: ",
+            stringify!(WGPUTextureDescriptor),
+            "::",
+            stringify!(mipLevelCount)
         )
     );
     assert_eq!(
@@ -3495,10 +3594,10 @@ fn bindgen_test_layout_WGPUTextureDescriptor() {
         },
         48usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUTextureDescriptor),
-        "::",
-        stringify!(sampleCount)
+            "Offset of field: ",
+            stringify!(WGPUTextureDescriptor),
+            "::",
+            stringify!(sampleCount)
         )
     );
 }
@@ -3521,8 +3620,8 @@ fn bindgen_test_layout_WGPUVertexBufferLayoutDescriptor() {
         ::core::mem::align_of::<WGPUVertexBufferLayoutDescriptor>(),
         8usize,
         concat!(
-        "Alignment of ",
-        stringify!(WGPUVertexBufferLayoutDescriptor)
+            "Alignment of ",
+            stringify!(WGPUVertexBufferLayoutDescriptor)
         )
     );
     assert_eq!(
@@ -3532,10 +3631,10 @@ fn bindgen_test_layout_WGPUVertexBufferLayoutDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexBufferLayoutDescriptor),
-        "::",
-        stringify!(arrayStride)
+            "Offset of field: ",
+            stringify!(WGPUVertexBufferLayoutDescriptor),
+            "::",
+            stringify!(arrayStride)
         )
     );
     assert_eq!(
@@ -3545,10 +3644,10 @@ fn bindgen_test_layout_WGPUVertexBufferLayoutDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexBufferLayoutDescriptor),
-        "::",
-        stringify!(stepMode)
+            "Offset of field: ",
+            stringify!(WGPUVertexBufferLayoutDescriptor),
+            "::",
+            stringify!(stepMode)
         )
     );
     assert_eq!(
@@ -3558,10 +3657,10 @@ fn bindgen_test_layout_WGPUVertexBufferLayoutDescriptor() {
         },
         12usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexBufferLayoutDescriptor),
-        "::",
-        stringify!(attributeCount)
+            "Offset of field: ",
+            stringify!(WGPUVertexBufferLayoutDescriptor),
+            "::",
+            stringify!(attributeCount)
         )
     );
     assert_eq!(
@@ -3571,10 +3670,10 @@ fn bindgen_test_layout_WGPUVertexBufferLayoutDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexBufferLayoutDescriptor),
-        "::",
-        stringify!(attributes)
+            "Offset of field: ",
+            stringify!(WGPUVertexBufferLayoutDescriptor),
+            "::",
+            stringify!(attributes)
         )
     );
 }
@@ -3605,20 +3704,20 @@ fn bindgen_test_layout_WGPURenderPassDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
         unsafe { &(*(::core::ptr::null::<WGPURenderPassDescriptor>())).label as *const _ as usize },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
@@ -3628,10 +3727,10 @@ fn bindgen_test_layout_WGPURenderPassDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDescriptor),
-        "::",
-        stringify!(colorAttachmentCount)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDescriptor),
+            "::",
+            stringify!(colorAttachmentCount)
         )
     );
     assert_eq!(
@@ -3641,10 +3740,10 @@ fn bindgen_test_layout_WGPURenderPassDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDescriptor),
-        "::",
-        stringify!(colorAttachments)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDescriptor),
+            "::",
+            stringify!(colorAttachments)
         )
     );
     assert_eq!(
@@ -3654,10 +3753,10 @@ fn bindgen_test_layout_WGPURenderPassDescriptor() {
         },
         32usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPassDescriptor),
-        "::",
-        stringify!(depthStencilAttachment)
+            "Offset of field: ",
+            stringify!(WGPURenderPassDescriptor),
+            "::",
+            stringify!(depthStencilAttachment)
         )
     );
 }
@@ -3687,10 +3786,10 @@ fn bindgen_test_layout_WGPUVertexStateDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexStateDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPUVertexStateDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -3699,10 +3798,10 @@ fn bindgen_test_layout_WGPUVertexStateDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexStateDescriptor),
-        "::",
-        stringify!(indexFormat)
+            "Offset of field: ",
+            stringify!(WGPUVertexStateDescriptor),
+            "::",
+            stringify!(indexFormat)
         )
     );
     assert_eq!(
@@ -3712,10 +3811,10 @@ fn bindgen_test_layout_WGPUVertexStateDescriptor() {
         },
         12usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexStateDescriptor),
-        "::",
-        stringify!(vertexBufferCount)
+            "Offset of field: ",
+            stringify!(WGPUVertexStateDescriptor),
+            "::",
+            stringify!(vertexBufferCount)
         )
     );
     assert_eq!(
@@ -3725,10 +3824,10 @@ fn bindgen_test_layout_WGPUVertexStateDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPUVertexStateDescriptor),
-        "::",
-        stringify!(vertexBuffers)
+            "Offset of field: ",
+            stringify!(WGPUVertexStateDescriptor),
+            "::",
+            stringify!(vertexBuffers)
         )
     );
 }
@@ -3769,10 +3868,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         0usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(nextInChain)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(nextInChain)
         )
     );
     assert_eq!(
@@ -3781,10 +3880,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         8usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(label)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(label)
         )
     );
     assert_eq!(
@@ -3793,10 +3892,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         16usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(layout)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(layout)
         )
     );
     assert_eq!(
@@ -3806,10 +3905,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         24usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(vertexStage)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(vertexStage)
         )
     );
     assert_eq!(
@@ -3819,10 +3918,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         48usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(fragmentStage)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(fragmentStage)
         )
     );
     assert_eq!(
@@ -3832,10 +3931,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         56usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(vertexState)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(vertexState)
         )
     );
     assert_eq!(
@@ -3845,10 +3944,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         64usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(primitiveTopology)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(primitiveTopology)
         )
     );
     assert_eq!(
@@ -3858,10 +3957,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         72usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(rasterizationState)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(rasterizationState)
         )
     );
     assert_eq!(
@@ -3871,10 +3970,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         80usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(sampleCount)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(sampleCount)
         )
     );
     assert_eq!(
@@ -3884,10 +3983,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         88usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(depthStencilState)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(depthStencilState)
         )
     );
     assert_eq!(
@@ -3897,10 +3996,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         96usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(colorStateCount)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(colorStateCount)
         )
     );
     assert_eq!(
@@ -3910,10 +4009,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         104usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(colorStates)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(colorStates)
         )
     );
     assert_eq!(
@@ -3923,10 +4022,10 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         112usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(sampleMask)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(sampleMask)
         )
     );
     assert_eq!(
@@ -3936,13 +4035,15 @@ fn bindgen_test_layout_WGPURenderPipelineDescriptor() {
         },
         116usize,
         concat!(
-        "Offset of field: ",
-        stringify!(WGPURenderPipelineDescriptor),
-        "::",
-        stringify!(alphaToCoverageEnabled)
+            "Offset of field: ",
+            stringify!(WGPURenderPipelineDescriptor),
+            "::",
+            stringify!(alphaToCoverageEnabled)
         )
     );
 }
+pub type WGPUBindGroupBinding = WGPUBindGroupEntry;
+pub type WGPUBindGroupLayoutBinding = WGPUBindGroupLayoutEntry;
 pub type WGPUBufferCreateMappedCallback = ::core::option::Option<
     unsafe extern "C" fn(
         status: WGPUBufferMapAsyncStatus,
@@ -3987,13 +4088,13 @@ pub type WGPUProcGetProcAddress = ::core::option::Option<
     unsafe extern "C" fn(device: WGPUDevice, procName: *const libc::c_char) -> WGPUProc,
 >;
 pub type WGPUProcBindGroupReference =
-::core::option::Option<unsafe extern "C" fn(bindGroup: WGPUBindGroup)>;
+    ::core::option::Option<unsafe extern "C" fn(bindGroup: WGPUBindGroup)>;
 pub type WGPUProcBindGroupRelease =
-::core::option::Option<unsafe extern "C" fn(bindGroup: WGPUBindGroup)>;
+    ::core::option::Option<unsafe extern "C" fn(bindGroup: WGPUBindGroup)>;
 pub type WGPUProcBindGroupLayoutReference =
-::core::option::Option<unsafe extern "C" fn(bindGroupLayout: WGPUBindGroupLayout)>;
+    ::core::option::Option<unsafe extern "C" fn(bindGroupLayout: WGPUBindGroupLayout)>;
 pub type WGPUProcBindGroupLayoutRelease =
-::core::option::Option<unsafe extern "C" fn(bindGroupLayout: WGPUBindGroupLayout)>;
+    ::core::option::Option<unsafe extern "C" fn(bindGroupLayout: WGPUBindGroupLayout)>;
 pub type WGPUProcBufferDestroy = ::core::option::Option<unsafe extern "C" fn(buffer: WGPUBuffer)>;
 pub type WGPUProcBufferMapReadAsync = ::core::option::Option<
     unsafe extern "C" fn(
@@ -4016,9 +4117,9 @@ pub type WGPUProcBufferUnmap = ::core::option::Option<unsafe extern "C" fn(buffe
 pub type WGPUProcBufferReference = ::core::option::Option<unsafe extern "C" fn(buffer: WGPUBuffer)>;
 pub type WGPUProcBufferRelease = ::core::option::Option<unsafe extern "C" fn(buffer: WGPUBuffer)>;
 pub type WGPUProcCommandBufferReference =
-::core::option::Option<unsafe extern "C" fn(commandBuffer: WGPUCommandBuffer)>;
+    ::core::option::Option<unsafe extern "C" fn(commandBuffer: WGPUCommandBuffer)>;
 pub type WGPUProcCommandBufferRelease =
-::core::option::Option<unsafe extern "C" fn(commandBuffer: WGPUCommandBuffer)>;
+    ::core::option::Option<unsafe extern "C" fn(commandBuffer: WGPUCommandBuffer)>;
 pub type WGPUProcCommandEncoderBeginComputePass = ::core::option::Option<
     unsafe extern "C" fn(
         commandEncoder: WGPUCommandEncoder,
@@ -4075,14 +4176,14 @@ pub type WGPUProcCommandEncoderInsertDebugMarker = ::core::option::Option<
     unsafe extern "C" fn(commandEncoder: WGPUCommandEncoder, groupLabel: *const libc::c_char),
 >;
 pub type WGPUProcCommandEncoderPopDebugGroup =
-::core::option::Option<unsafe extern "C" fn(commandEncoder: WGPUCommandEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(commandEncoder: WGPUCommandEncoder)>;
 pub type WGPUProcCommandEncoderPushDebugGroup = ::core::option::Option<
     unsafe extern "C" fn(commandEncoder: WGPUCommandEncoder, groupLabel: *const libc::c_char),
 >;
 pub type WGPUProcCommandEncoderReference =
-::core::option::Option<unsafe extern "C" fn(commandEncoder: WGPUCommandEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(commandEncoder: WGPUCommandEncoder)>;
 pub type WGPUProcCommandEncoderRelease =
-::core::option::Option<unsafe extern "C" fn(commandEncoder: WGPUCommandEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(commandEncoder: WGPUCommandEncoder)>;
 pub type WGPUProcComputePassEncoderDispatch = ::core::option::Option<
     unsafe extern "C" fn(computePassEncoder: WGPUComputePassEncoder, x: u32, y: u32, z: u32),
 >;
@@ -4094,7 +4195,7 @@ pub type WGPUProcComputePassEncoderDispatchIndirect = ::core::option::Option<
     ),
 >;
 pub type WGPUProcComputePassEncoderEndPass =
-::core::option::Option<unsafe extern "C" fn(computePassEncoder: WGPUComputePassEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(computePassEncoder: WGPUComputePassEncoder)>;
 pub type WGPUProcComputePassEncoderInsertDebugMarker = ::core::option::Option<
     unsafe extern "C" fn(
         computePassEncoder: WGPUComputePassEncoder,
@@ -4102,7 +4203,7 @@ pub type WGPUProcComputePassEncoderInsertDebugMarker = ::core::option::Option<
     ),
 >;
 pub type WGPUProcComputePassEncoderPopDebugGroup =
-::core::option::Option<unsafe extern "C" fn(computePassEncoder: WGPUComputePassEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(computePassEncoder: WGPUComputePassEncoder)>;
 pub type WGPUProcComputePassEncoderPushDebugGroup = ::core::option::Option<
     unsafe extern "C" fn(
         computePassEncoder: WGPUComputePassEncoder,
@@ -4122,16 +4223,19 @@ pub type WGPUProcComputePassEncoderSetPipeline = ::core::option::Option<
     unsafe extern "C" fn(computePassEncoder: WGPUComputePassEncoder, pipeline: WGPUComputePipeline),
 >;
 pub type WGPUProcComputePassEncoderReference =
-::core::option::Option<unsafe extern "C" fn(computePassEncoder: WGPUComputePassEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(computePassEncoder: WGPUComputePassEncoder)>;
 pub type WGPUProcComputePassEncoderRelease =
-::core::option::Option<unsafe extern "C" fn(computePassEncoder: WGPUComputePassEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(computePassEncoder: WGPUComputePassEncoder)>;
 pub type WGPUProcComputePipelineGetBindGroupLayout = ::core::option::Option<
-    unsafe extern "C" fn(computePipeline: WGPUComputePipeline, group: u32) -> WGPUBindGroupLayout,
+    unsafe extern "C" fn(
+        computePipeline: WGPUComputePipeline,
+        groupIndex: u32,
+    ) -> WGPUBindGroupLayout,
 >;
 pub type WGPUProcComputePipelineReference =
-::core::option::Option<unsafe extern "C" fn(computePipeline: WGPUComputePipeline)>;
+    ::core::option::Option<unsafe extern "C" fn(computePipeline: WGPUComputePipeline)>;
 pub type WGPUProcComputePipelineRelease =
-::core::option::Option<unsafe extern "C" fn(computePipeline: WGPUComputePipeline)>;
+    ::core::option::Option<unsafe extern "C" fn(computePipeline: WGPUComputePipeline)>;
 pub type WGPUProcDeviceCreateBindGroup = ::core::option::Option<
     unsafe extern "C" fn(
         device: WGPUDevice,
@@ -4180,7 +4284,7 @@ pub type WGPUProcDeviceCreatePipelineLayout = ::core::option::Option<
     ) -> WGPUPipelineLayout,
 >;
 pub type WGPUProcDeviceCreateQueue =
-::core::option::Option<unsafe extern "C" fn(device: WGPUDevice) -> WGPUQueue>;
+    ::core::option::Option<unsafe extern "C" fn(device: WGPUDevice) -> WGPUQueue>;
 pub type WGPUProcDeviceCreateRenderBundleEncoder = ::core::option::Option<
     unsafe extern "C" fn(
         device: WGPUDevice,
@@ -4222,7 +4326,7 @@ pub type WGPUProcDeviceInjectError = ::core::option::Option<
     unsafe extern "C" fn(device: WGPUDevice, type_: WGPUErrorType, message: *const libc::c_char),
 >;
 pub type WGPUProcDeviceLoseForTesting =
-::core::option::Option<unsafe extern "C" fn(device: WGPUDevice)>;
+    ::core::option::Option<unsafe extern "C" fn(device: WGPUDevice)>;
 pub type WGPUProcDevicePopErrorScope = ::core::option::Option<
     unsafe extern "C" fn(
         device: WGPUDevice,
@@ -4231,7 +4335,7 @@ pub type WGPUProcDevicePopErrorScope = ::core::option::Option<
     ) -> bool,
 >;
 pub type WGPUProcDevicePushErrorScope =
-::core::option::Option<unsafe extern "C" fn(device: WGPUDevice, filter: WGPUErrorFilter)>;
+    ::core::option::Option<unsafe extern "C" fn(device: WGPUDevice, filter: WGPUErrorFilter)>;
 pub type WGPUProcDeviceSetDeviceLostCallback = ::core::option::Option<
     unsafe extern "C" fn(
         device: WGPUDevice,
@@ -4250,7 +4354,7 @@ pub type WGPUProcDeviceTick = ::core::option::Option<unsafe extern "C" fn(device
 pub type WGPUProcDeviceReference = ::core::option::Option<unsafe extern "C" fn(device: WGPUDevice)>;
 pub type WGPUProcDeviceRelease = ::core::option::Option<unsafe extern "C" fn(device: WGPUDevice)>;
 pub type WGPUProcFenceGetCompletedValue =
-::core::option::Option<unsafe extern "C" fn(fence: WGPUFence) -> u64>;
+    ::core::option::Option<unsafe extern "C" fn(fence: WGPUFence) -> u64>;
 pub type WGPUProcFenceOnCompletion = ::core::option::Option<
     unsafe extern "C" fn(
         fence: WGPUFence,
@@ -4268,13 +4372,13 @@ pub type WGPUProcInstanceCreateSurface = ::core::option::Option<
     ) -> WGPUSurface,
 >;
 pub type WGPUProcInstanceReference =
-::core::option::Option<unsafe extern "C" fn(instance: WGPUInstance)>;
+    ::core::option::Option<unsafe extern "C" fn(instance: WGPUInstance)>;
 pub type WGPUProcInstanceRelease =
-::core::option::Option<unsafe extern "C" fn(instance: WGPUInstance)>;
+    ::core::option::Option<unsafe extern "C" fn(instance: WGPUInstance)>;
 pub type WGPUProcPipelineLayoutReference =
-::core::option::Option<unsafe extern "C" fn(pipelineLayout: WGPUPipelineLayout)>;
+    ::core::option::Option<unsafe extern "C" fn(pipelineLayout: WGPUPipelineLayout)>;
 pub type WGPUProcPipelineLayoutRelease =
-::core::option::Option<unsafe extern "C" fn(pipelineLayout: WGPUPipelineLayout)>;
+    ::core::option::Option<unsafe extern "C" fn(pipelineLayout: WGPUPipelineLayout)>;
 pub type WGPUProcQueueCreateFence = ::core::option::Option<
     unsafe extern "C" fn(queue: WGPUQueue, descriptor: *const WGPUFenceDescriptor) -> WGPUFence,
 >;
@@ -4287,9 +4391,9 @@ pub type WGPUProcQueueSubmit = ::core::option::Option<
 pub type WGPUProcQueueReference = ::core::option::Option<unsafe extern "C" fn(queue: WGPUQueue)>;
 pub type WGPUProcQueueRelease = ::core::option::Option<unsafe extern "C" fn(queue: WGPUQueue)>;
 pub type WGPUProcRenderBundleReference =
-::core::option::Option<unsafe extern "C" fn(renderBundle: WGPURenderBundle)>;
+    ::core::option::Option<unsafe extern "C" fn(renderBundle: WGPURenderBundle)>;
 pub type WGPUProcRenderBundleRelease =
-::core::option::Option<unsafe extern "C" fn(renderBundle: WGPURenderBundle)>;
+    ::core::option::Option<unsafe extern "C" fn(renderBundle: WGPURenderBundle)>;
 pub type WGPUProcRenderBundleEncoderDraw = ::core::option::Option<
     unsafe extern "C" fn(
         renderBundleEncoder: WGPURenderBundleEncoder,
@@ -4336,7 +4440,7 @@ pub type WGPUProcRenderBundleEncoderInsertDebugMarker = ::core::option::Option<
     ),
 >;
 pub type WGPUProcRenderBundleEncoderPopDebugGroup =
-::core::option::Option<unsafe extern "C" fn(renderBundleEncoder: WGPURenderBundleEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(renderBundleEncoder: WGPURenderBundleEncoder)>;
 pub type WGPUProcRenderBundleEncoderPushDebugGroup = ::core::option::Option<
     unsafe extern "C" fn(
         renderBundleEncoder: WGPURenderBundleEncoder,
@@ -4374,9 +4478,9 @@ pub type WGPUProcRenderBundleEncoderSetVertexBuffer = ::core::option::Option<
     ),
 >;
 pub type WGPUProcRenderBundleEncoderReference =
-::core::option::Option<unsafe extern "C" fn(renderBundleEncoder: WGPURenderBundleEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(renderBundleEncoder: WGPURenderBundleEncoder)>;
 pub type WGPUProcRenderBundleEncoderRelease =
-::core::option::Option<unsafe extern "C" fn(renderBundleEncoder: WGPURenderBundleEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(renderBundleEncoder: WGPURenderBundleEncoder)>;
 pub type WGPUProcRenderPassEncoderDraw = ::core::option::Option<
     unsafe extern "C" fn(
         renderPassEncoder: WGPURenderPassEncoder,
@@ -4411,7 +4515,7 @@ pub type WGPUProcRenderPassEncoderDrawIndirect = ::core::option::Option<
     ),
 >;
 pub type WGPUProcRenderPassEncoderEndPass =
-::core::option::Option<unsafe extern "C" fn(renderPassEncoder: WGPURenderPassEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(renderPassEncoder: WGPURenderPassEncoder)>;
 pub type WGPUProcRenderPassEncoderExecuteBundles = ::core::option::Option<
     unsafe extern "C" fn(
         renderPassEncoder: WGPURenderPassEncoder,
@@ -4423,7 +4527,7 @@ pub type WGPUProcRenderPassEncoderInsertDebugMarker = ::core::option::Option<
     unsafe extern "C" fn(renderPassEncoder: WGPURenderPassEncoder, groupLabel: *const libc::c_char),
 >;
 pub type WGPUProcRenderPassEncoderPopDebugGroup =
-::core::option::Option<unsafe extern "C" fn(renderPassEncoder: WGPURenderPassEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(renderPassEncoder: WGPURenderPassEncoder)>;
 pub type WGPUProcRenderPassEncoderPushDebugGroup = ::core::option::Option<
     unsafe extern "C" fn(renderPassEncoder: WGPURenderPassEncoder, groupLabel: *const libc::c_char),
 >;
@@ -4477,28 +4581,31 @@ pub type WGPUProcRenderPassEncoderSetViewport = ::core::option::Option<
     ),
 >;
 pub type WGPUProcRenderPassEncoderReference =
-::core::option::Option<unsafe extern "C" fn(renderPassEncoder: WGPURenderPassEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(renderPassEncoder: WGPURenderPassEncoder)>;
 pub type WGPUProcRenderPassEncoderRelease =
-::core::option::Option<unsafe extern "C" fn(renderPassEncoder: WGPURenderPassEncoder)>;
+    ::core::option::Option<unsafe extern "C" fn(renderPassEncoder: WGPURenderPassEncoder)>;
 pub type WGPUProcRenderPipelineGetBindGroupLayout = ::core::option::Option<
-    unsafe extern "C" fn(renderPipeline: WGPURenderPipeline, group: u32) -> WGPUBindGroupLayout,
+    unsafe extern "C" fn(
+        renderPipeline: WGPURenderPipeline,
+        groupIndex: u32,
+    ) -> WGPUBindGroupLayout,
 >;
 pub type WGPUProcRenderPipelineReference =
-::core::option::Option<unsafe extern "C" fn(renderPipeline: WGPURenderPipeline)>;
+    ::core::option::Option<unsafe extern "C" fn(renderPipeline: WGPURenderPipeline)>;
 pub type WGPUProcRenderPipelineRelease =
-::core::option::Option<unsafe extern "C" fn(renderPipeline: WGPURenderPipeline)>;
+    ::core::option::Option<unsafe extern "C" fn(renderPipeline: WGPURenderPipeline)>;
 pub type WGPUProcSamplerReference =
-::core::option::Option<unsafe extern "C" fn(sampler: WGPUSampler)>;
+    ::core::option::Option<unsafe extern "C" fn(sampler: WGPUSampler)>;
 pub type WGPUProcSamplerRelease =
-::core::option::Option<unsafe extern "C" fn(sampler: WGPUSampler)>;
+    ::core::option::Option<unsafe extern "C" fn(sampler: WGPUSampler)>;
 pub type WGPUProcShaderModuleReference =
-::core::option::Option<unsafe extern "C" fn(shaderModule: WGPUShaderModule)>;
+    ::core::option::Option<unsafe extern "C" fn(shaderModule: WGPUShaderModule)>;
 pub type WGPUProcShaderModuleRelease =
-::core::option::Option<unsafe extern "C" fn(shaderModule: WGPUShaderModule)>;
+    ::core::option::Option<unsafe extern "C" fn(shaderModule: WGPUShaderModule)>;
 pub type WGPUProcSurfaceReference =
-::core::option::Option<unsafe extern "C" fn(surface: WGPUSurface)>;
+    ::core::option::Option<unsafe extern "C" fn(surface: WGPUSurface)>;
 pub type WGPUProcSurfaceRelease =
-::core::option::Option<unsafe extern "C" fn(surface: WGPUSurface)>;
+    ::core::option::Option<unsafe extern "C" fn(surface: WGPUSurface)>;
 pub type WGPUProcSwapChainConfigure = ::core::option::Option<
     unsafe extern "C" fn(
         swapChain: WGPUSwapChain,
@@ -4509,13 +4616,13 @@ pub type WGPUProcSwapChainConfigure = ::core::option::Option<
     ),
 >;
 pub type WGPUProcSwapChainGetCurrentTextureView =
-::core::option::Option<unsafe extern "C" fn(swapChain: WGPUSwapChain) -> WGPUTextureView>;
+    ::core::option::Option<unsafe extern "C" fn(swapChain: WGPUSwapChain) -> WGPUTextureView>;
 pub type WGPUProcSwapChainPresent =
-::core::option::Option<unsafe extern "C" fn(swapChain: WGPUSwapChain)>;
+    ::core::option::Option<unsafe extern "C" fn(swapChain: WGPUSwapChain)>;
 pub type WGPUProcSwapChainReference =
-::core::option::Option<unsafe extern "C" fn(swapChain: WGPUSwapChain)>;
+    ::core::option::Option<unsafe extern "C" fn(swapChain: WGPUSwapChain)>;
 pub type WGPUProcSwapChainRelease =
-::core::option::Option<unsafe extern "C" fn(swapChain: WGPUSwapChain)>;
+    ::core::option::Option<unsafe extern "C" fn(swapChain: WGPUSwapChain)>;
 pub type WGPUProcTextureCreateView = ::core::option::Option<
     unsafe extern "C" fn(
         texture: WGPUTexture,
@@ -4523,15 +4630,15 @@ pub type WGPUProcTextureCreateView = ::core::option::Option<
     ) -> WGPUTextureView,
 >;
 pub type WGPUProcTextureDestroy =
-::core::option::Option<unsafe extern "C" fn(texture: WGPUTexture)>;
+    ::core::option::Option<unsafe extern "C" fn(texture: WGPUTexture)>;
 pub type WGPUProcTextureReference =
-::core::option::Option<unsafe extern "C" fn(texture: WGPUTexture)>;
+    ::core::option::Option<unsafe extern "C" fn(texture: WGPUTexture)>;
 pub type WGPUProcTextureRelease =
-::core::option::Option<unsafe extern "C" fn(texture: WGPUTexture)>;
+    ::core::option::Option<unsafe extern "C" fn(texture: WGPUTexture)>;
 pub type WGPUProcTextureViewReference =
-::core::option::Option<unsafe extern "C" fn(textureView: WGPUTextureView)>;
+    ::core::option::Option<unsafe extern "C" fn(textureView: WGPUTextureView)>;
 pub type WGPUProcTextureViewRelease =
-::core::option::Option<unsafe extern "C" fn(textureView: WGPUTextureView)>;
+    ::core::option::Option<unsafe extern "C" fn(textureView: WGPUTextureView)>;
 extern "C" {
     pub fn wgpuCreateInstance(descriptor: *const WGPUInstanceDescriptor) -> WGPUInstance;
 }
@@ -4720,7 +4827,7 @@ extern "C" {
 extern "C" {
     pub fn wgpuComputePipelineGetBindGroupLayout(
         computePipeline: WGPUComputePipeline,
-        group: u32,
+        groupIndex: u32,
     ) -> WGPUBindGroupLayout;
 }
 extern "C" {
@@ -5140,7 +5247,7 @@ extern "C" {
 extern "C" {
     pub fn wgpuRenderPipelineGetBindGroupLayout(
         renderPipeline: WGPURenderPipeline,
-        group: u32,
+        groupIndex: u32,
     ) -> WGPUBindGroupLayout;
 }
 extern "C" {

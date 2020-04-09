@@ -1632,7 +1632,7 @@ impl Device {
         let mut raw_entries =
             SmallVec::<[sys::WGPUBindGroupBinding; DEFAULT_MAX_BIND_GROUPS]>::new();
         for entry in descriptor.entries.iter() {
-            raw_entries.push(sys::WGPUBindGroupBinding {
+            raw_entries.push(sys::WGPUBindGroupEntry{
                 binding: entry.binding,
                 buffer: match entry.resource {
                     BindingResource::BufferBinding(ref binding) => binding.buffer.raw,
@@ -1741,9 +1741,9 @@ impl Device {
     ) -> BindGroupLayout {
         let label = convert::label(descriptor.label);
         let mut raw_entries =
-            SmallVec::<[sys::WGPUBindGroupLayoutBinding; DEFAULT_MAX_BIND_GROUPS]>::new();
+            SmallVec::<[sys::WGPUBindGroupLayoutEntry; DEFAULT_MAX_BIND_GROUPS]>::new();
         for entry in descriptor.entries.iter() {
-            raw_entries.push(sys::WGPUBindGroupLayoutBinding {
+            raw_entries.push(sys::WGPUBindGroupLayoutEntry {
                 binding: entry.binding,
                 visibility: entry.visibility.bits as _,
                 type_: match entry.ty {
